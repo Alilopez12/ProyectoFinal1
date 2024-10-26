@@ -1,10 +1,10 @@
 package co.edu.uniquindio.proyectofinal1.factory;
 
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.mapping.mapper.MarketPlaceMappinglmpl;
-import co.edu.uniquindio.proyectofinal.model.MarketPlace;
-import co.edu.uniquindio.proyectofinal.model.Usuario;
-import co.edu.uniquindio.proyectofinal.service.IModelFactoryServices;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.mapping.mapper.MarketPlaceMappinglmpl;
+import co.edu.uniquindio.proyectofinal1.model.MarketPlace;
+import co.edu.uniquindio.proyectofinal1.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.service.IModelFactoryServices;
 
 import java.util.List;
 

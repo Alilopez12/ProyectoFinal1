@@ -1,8 +1,8 @@
 package co.edu.uniquindio.proyectofinal1.controller;
 
-import co.edu.uniquindio.proyectofinal.factory.ModelFactory;
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.service.IUsuarioControllerService;
+import co.edu.uniquindio.proyectofinal1.factory.ModelFactory;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.service.IUsuarioControllerService;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
-import co.edu.uniquindio.proyectofinal.service.ICrudUsuario;
+import co.edu.uniquindio.proyectofinal1.service.ICrudUsuario;
 
 import java.util.ArrayList;
 import java.util.List;

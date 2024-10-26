@@ -1,6 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.model.builder;
 
-import co.edu.uniquindio.proyectofinal.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.model.Usuario;
 
 
 public class UsuarioBuilder {

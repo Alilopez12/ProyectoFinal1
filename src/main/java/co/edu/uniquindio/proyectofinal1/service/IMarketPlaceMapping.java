@@ -1,6 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.service;
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.model.Usuario;
 
 import java.awt.*;
 
