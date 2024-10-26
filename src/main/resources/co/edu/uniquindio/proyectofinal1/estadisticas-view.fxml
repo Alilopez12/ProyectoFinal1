@@ -23,16 +23,16 @@
                               <Font name="Apple Color Emoji" size="21.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="34.0" layoutY="98.0" text="TOTAL VENDEDORES" />
-                        <TextField layoutX="34.0" layoutY="144.0" text="TOTAL PRODUCTOS" />
-                        <TextField layoutX="34.0" layoutY="191.0" text="TOTAL TRANSACCIONES" />
-                        <Button layoutX="249.0" layoutY="96.0" mnemonicParsing="false" text="Generar" textFill="#1d378d" />
-                        <Button layoutX="249.0" layoutY="142.0" mnemonicParsing="false" text="Generar" textFill="#1d378d" />
-                        <Button layoutX="249.0" layoutY="189.0" mnemonicParsing="false" text="Generar" textFill="#1d378d" />
+                        <TextField fx:id="txtVendedores" layoutX="34.0" layoutY="98.0" text="TOTAL VENDEDORES" />
+                        <TextField fx:id="txtProductos" layoutX="34.0" layoutY="144.0" text="TOTAL PRODUCTOS" />
+                        <TextField fx:id="txtTransacciones" layoutX="34.0" layoutY="191.0" text="TOTAL TRANSACCIONES" />
+                        <Button fx:id="btnGenerar" layoutX="249.0" layoutY="96.0" mnemonicParsing="false" onAction="#onGenerar" text="Generar" textFill="#1d378d" />
+                        <Button fx:id="btnGenerar" layoutX="249.0" layoutY="142.0" mnemonicParsing="false" onAction="#onGenerar" text="Generar" textFill="#1d378d" />
+                        <Button fx:id="btnGenerar" layoutX="249.0" layoutY="189.0" mnemonicParsing="false" onAction="#onGenerar" text="Generar" textFill="#1d378d" />
                         <ToolBar layoutX="116.0" layoutY="255.0" prefHeight="41.0" prefWidth="187.0" AnchorPane.rightAnchor="308.0">
                           <items>
-                            <Button mnemonicParsing="false" text="--&gt;" />
-                              <Label prefHeight="17.0" prefWidth="127.0" text="Notificaciones" textAlignment="CENTER" textFill="#23488d">
+                            <Button fx:id="btnNotificaciones" mnemonicParsing="false" onAction="#onNotificaciones" text="--&gt;" />
+                              <Label fx:id="txtNotificaciones" prefHeight="17.0" prefWidth="127.0" text="Notificaciones" textAlignment="CENTER" textFill="#23488d">
                                  <font>
                                     <Font name="Andale Mono" size="14.0" />
                                  </font>
@@ -47,7 +47,7 @@
                               <Image url="@../../../../../../../../../../../Desktop/Captura%20de%20pantalla%202024-10-26%20a%20la(s)%201.56.42%20p.m..png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="417.0" layoutY="262.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="162.0" text="Exportar Estadisticas" textFill="#122e83">
+                        <Button fx:id="btnEstadisticas" layoutX="417.0" layoutY="262.0" mnemonicParsing="false" onAction="#onEstadisticas" prefHeight="29.0" prefWidth="162.0" text="Exportar Estadisticas" textFill="#122e83">
                            <font>
                               <Font size="14.0" />
                            </font>
