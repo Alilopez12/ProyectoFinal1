@@ -56,9 +56,11 @@ public abstract class Usuario {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+
     public static UsuarioBuilder builder(){
         return new UsuarioBuilder();
     }
+
 
     @Override
     public String toString() {
