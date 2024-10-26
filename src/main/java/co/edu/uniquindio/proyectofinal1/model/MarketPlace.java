@@ -1,11 +1,14 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
-import co.edu.uniquindio.proyectofinal.service.ICrudUsuario;
+
+
+import co.edu.uniquindio.proyectofinal1.service.ICrudUsuario;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MarketPlace implements ICrudUsuario {
+
     List<Usuario> listUsuarios = new ArrayList<>();
     List<Vendedor> listVendedores = new ArrayList<>();
     List<Administrador> ListAdministradores = new ArrayList<>();
@@ -95,6 +98,8 @@ public class MarketPlace implements ICrudUsuario {
         return listUsuarios;
     }
 
+
+
     public void setListUsuarios(List<Usuario> listUsuarios) {
         this.listUsuarios = listUsuarios;
     }
@@ -122,4 +127,6 @@ public class MarketPlace implements ICrudUsuario {
     public void setListAdministradores(List<Administrador> listAdministradores) {
         ListAdministradores = listAdministradores;
     }
+
+
 }

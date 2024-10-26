@@ -1,13 +1,25 @@
 package co.edu.uniquindio.proyectofinal1.mapping.mapper;
 
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.model.Usuario;
-import co.edu.uniquindio.proyectofinal.service.IMarketPlaceMapping;
+
+
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.service.IMarketPlaceMapping;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MarketPlaceMappinglmpl implements IMarketPlaceMapping {
+
+    @Override
+    public List<UsuarioDto> obtenerUsuarios() {
+        return List.of();
+    }
+
+    @Override
+    public boolean agregarUsuario(UsuarioDto usuarioDto) {
+        return false;
+    }
 
     @Override
     public List<UsuarioDto> getUsuariosDto(List<Usuario> listaUsuarios) {
@@ -41,4 +53,7 @@ public class MarketPlaceMappinglmpl implements IMarketPlaceMapping {
                 .cedula(usuarioDto.cedula())
                 .build();
     }
-    }
+
+
+
+}

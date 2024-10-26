@@ -1,14 +1,17 @@
 package co.edu.uniquindio.proyectofinal1.factory;
 
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.mapping.mapper.MarketPlaceMappinglmpl;
-import co.edu.uniquindio.proyectofinal.model.MarketPlace;
-import co.edu.uniquindio.proyectofinal.model.Usuario;
-import co.edu.uniquindio.proyectofinal.service.IModelFactoryServices;
+
+
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.mapping.mapper.MarketPlaceMappinglmpl;
+import co.edu.uniquindio.proyectofinal1.model.MarketPlace;
+import co.edu.uniquindio.proyectofinal1.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.service.IModelFactoryServices;
 
 import java.util.List;
 
 public class ModelFactory implements IModelFactoryServices {
+
     private static ModelFactory instance;
     MarketPlace marketPlace;
     MarketPlaceMappinglmpl mapper;
@@ -58,6 +61,7 @@ public class ModelFactory implements IModelFactoryServices {
     public boolean eliminarUsuario(String cedula){
         return false;
     }
+
     @Override
     public boolean actualizarUsuario(String cedulaActual, UsuarioDto usuarioDto) {
         return false;
@@ -65,6 +69,7 @@ public class ModelFactory implements IModelFactoryServices {
 
     public static MarketPlace inicializarDatos(){
         MarketPlace marketPlace1 = new MarketPlace();
+
         Usuario usuario1 = Usuario.builder()
                 .nombre("Alicia")
                 .apellidos("Montes Ceballos")

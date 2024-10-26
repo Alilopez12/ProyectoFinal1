@@ -1,10 +1,11 @@
 package co.edu.uniquindio.proyectofinal1.service;
 
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 
 import java.util.List;
 
 public interface IModelFactoryServices {
+
     List<UsuarioDto> obtenerUsuarios();
     boolean agregarUsuario(UsuarioDto usuarioDto);
 

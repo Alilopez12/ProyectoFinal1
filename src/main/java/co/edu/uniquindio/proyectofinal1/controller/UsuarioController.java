@@ -1,16 +1,21 @@
 package co.edu.uniquindio.proyectofinal1.controller;
 
-import co.edu.uniquindio.proyectofinal.factory.ModelFactory;
-import co.edu.uniquindio.proyectofinal.mapping.dto.UsuarioDto;
-import co.edu.uniquindio.proyectofinal.service.IUsuarioControllerService;
+
+
+import co.edu.uniquindio.proyectofinal1.factory.ModelFactory;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.service.IUsuarioControllerService;
 
 import java.util.List;
 
 public class UsuarioController implements IUsuarioControllerService {
+
     ModelFactory modelFactory;
+
     public UsuarioController(){
         modelFactory = ModelFactory.getInstance();
     }
+
     public List<UsuarioDto> obtenerUsuarios(){
         return modelFactory.obtenerUsuarios();
     }
@@ -19,6 +24,7 @@ public class UsuarioController implements IUsuarioControllerService {
     public  List<UsuarioDto> obtenerUsuariosDto(){
         return List.of();
     }
+
     @Override
     public boolean agregarUsuario(UsuarioDto usuarioDto){
         return modelFactory.agregarUsuario(usuarioDto);

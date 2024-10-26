@@ -1,6 +1,7 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
-import co.edu.uniquindio.proyectofinal.model.builder.UsuarioBuilder;
+
+import co.edu.uniquindio.proyectofinal1.model.builder.UsuarioBuilder;
 
 public abstract class Usuario {
     private String nombre;
