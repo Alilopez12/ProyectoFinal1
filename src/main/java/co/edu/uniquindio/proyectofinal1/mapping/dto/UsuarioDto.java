@@ -1,6 +1,7 @@
 package co.edu.uniquindio.proyectofinal1.mapping.dto;
 
 public record UsuarioDto(String nombre, String apellidos, String cedula, String direccion, String contraseña) {
+
     @Override
     public String toString() {
         return "UsuarioDto{" +
@@ -11,5 +12,6 @@ public record UsuarioDto(String nombre, String apellidos, String cedula, String 
                 ", contraeña='" + contraseña + '\'' +
                 '}';
     }
+
 }
 

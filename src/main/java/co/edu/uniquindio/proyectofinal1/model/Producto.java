@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Producto {
+
     private String nombre;
     private String imagen;
     private String categoria;
@@ -79,4 +80,6 @@ public class Producto {
                 ", listPublicaciones=" + listPublicaciones +
                 '}';
     }
+
+
 }

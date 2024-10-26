@@ -32,6 +32,7 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -61,7 +62,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                co.edu.uniquindio.proyectofinal1/co.edu.uniquindio.proyectofinal1.HelloApplication
+                                co.edu.uniquindio.proyectofinal1/co.edu.uniquindio.proyectofinal1.MarketPlaceApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

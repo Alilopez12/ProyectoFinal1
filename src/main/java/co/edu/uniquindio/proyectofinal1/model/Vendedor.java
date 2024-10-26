@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Vendedor extends Usuario{
+
     List<Producto> ListProductos = new ArrayList<>();
     List<Chat> listChats = new ArrayList<>();
     private Muro muroProductos;

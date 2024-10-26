@@ -1,6 +1,7 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
 public class TableroDeControl {
+
     private int cantidadMensajes;
     private int cantidadProductos;
     private int cantidadContactos;
@@ -43,4 +44,6 @@ public class TableroDeControl {
                 ", cantidadContactos=" + cantidadContactos +
                 '}';
     }
+
+
 }

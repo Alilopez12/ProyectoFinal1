@@ -5,6 +5,7 @@ import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 import java.util.List;
 
 public interface IModelFactoryServices {
+
     List<UsuarioDto> obtenerUsuarios();
     boolean agregarUsuario(UsuarioDto usuarioDto);
 
