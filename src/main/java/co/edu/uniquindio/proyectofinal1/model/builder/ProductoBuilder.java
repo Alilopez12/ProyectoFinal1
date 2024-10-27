@@ -6,17 +6,23 @@ import co.edu.uniquindio.proyectofinal1.model.Producto;
 public class ProductoBuilder {
 
     protected String nombre;
+    protected String idProducto;
     protected String imagen;
     protected String categoria;
     protected double precio;
     protected EstadoProducto estadoProducto;
 
     public Producto build(){
-        return new Producto(nombre, imagen, categoria, precio, estadoProducto, null);
+        return new Producto(nombre, idProducto, imagen, categoria, precio, estadoProducto, null);
     }
 
     public ProductoBuilder nombre(String nombre){
         this.nombre = nombre;
+        return this;
+    }
+
+    public ProductoBuilder idProducto(String idProducto){
+        this.idProducto = idProducto;
         return this;
     }
 
