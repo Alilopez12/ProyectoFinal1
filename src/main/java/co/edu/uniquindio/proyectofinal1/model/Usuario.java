@@ -2,7 +2,7 @@ package co.edu.uniquindio.proyectofinal1.model;
 
 import co.edu.uniquindio.proyectofinal1.model.builder.UsuarioBuilder;
 
-public abstract class Usuario {
+public class Usuario {
     private String nombre;
     private String apellidos;
     private String cedula;

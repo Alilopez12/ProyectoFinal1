@@ -50,4 +50,14 @@ public class EstadisticasViewController {
         assert txtNotificaciones != null : "fx:id=\"txtNotificaciones\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
 
     }
+
+    public void onGenerar(ActionEvent actionEvent) {
+    }
+
+    public void onNotificaciones(ActionEvent actionEvent) {
+    }
+
+    public void onEstadisticas(ActionEvent actionEvent) {
+
+    }
 }

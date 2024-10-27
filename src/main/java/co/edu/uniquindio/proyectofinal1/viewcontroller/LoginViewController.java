@@ -1,6 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
-import com.gluonhq.charm.glisten.control.TextField;
+import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
