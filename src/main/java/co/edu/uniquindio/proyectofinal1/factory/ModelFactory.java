@@ -2,13 +2,13 @@ package co.edu.uniquindio.proyectofinal1.factory;
 
 import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.proyectofinal1.mapping.mapper.MarketPlaceMappinglmpl;
-import co.edu.uniquindio.proyectofinal1.model.MarketPlace;
-import co.edu.uniquindio.proyectofinal1.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.model.*;
 import co.edu.uniquindio.proyectofinal1.service.IModelFactoryServices;
 
 import java.util.List;
 
 public class ModelFactory implements IModelFactoryServices {
+    
     private static ModelFactory instance;
     MarketPlace marketPlace;
     MarketPlaceMappinglmpl mapper;
@@ -64,8 +64,10 @@ public class ModelFactory implements IModelFactoryServices {
     }
 
     public static MarketPlace inicializarDatos(){
+
         MarketPlace marketPlace1 = new MarketPlace();
-        Usuario usuario1 = Usuario.builder()
+
+        Usuario administrador = Administrador.builder()
                 .nombre("Alicia")
                 .apellidos("Montes Ceballos")
                 .cedula("1254785624")
@@ -73,7 +75,7 @@ public class ModelFactory implements IModelFactoryServices {
                 .contraseña("25MNhgg")
                 .build();
 
-        Usuario usuario2 = Usuario.builder()
+        Usuario vendedor1 = Vendedor.builder()
                 .nombre("Macarena")
                 .apellidos("López Martinez")
                 .cedula("418956315")
@@ -81,8 +83,36 @@ public class ModelFactory implements IModelFactoryServices {
                 .contraseña("3351.kdn")
                 .build();
 
-        marketPlace1.getListUsuarios().add(usuario1);
-        marketPlace1.getListUsuarios().add(usuario2);
+        Usuario vendedor2 = Vendedor.builder()
+                .nombre("Diego")
+                .apellidos("Gonzales Guamacha")
+                .cedula("762139856")
+                .direccion("Armenia")
+                .contraseña("Kiyh341Q=?")
+                .build();
+
+        Producto producto1 = Producto.builder()
+                .nombre("Smartphone")
+                .imagen("ImagenProducto1")
+                .categoria("C")
+                .precio(3500000.12)
+                .estadoProducto(EstadoProducto.PUBLICADO)
+                .build();
+
+        Producto producto2 = Producto.builder()
+                .nombre("Nevera")
+                .imagen("ImagenProducto2")
+                .categoria("B")
+                .precio(34200800.50)
+                .estadoProducto(EstadoProducto.VENDIDO)
+                .build();
+
+
+
+
+        marketPlace1.getListUsuarios().add(administrador);
+        marketPlace1.getListUsuarios().add(vendedor1);
+        marketPlace1.getListUsuarios().add(vendedor2);
 
         return marketPlace1;
 

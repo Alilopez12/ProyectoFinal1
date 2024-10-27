@@ -1,5 +1,8 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
+import co.edu.uniquindio.proyectofinal1.model.builder.AdministradorBuilder;
+import co.edu.uniquindio.proyectofinal1.model.builder.ProductoBuilder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +22,10 @@ public class Producto {
         this.precio = precio;
         this.estadoProducto = estadoProducto;
         this.listPublicaciones = listPublicaciones;
+    }
+
+    public static ProductoBuilder builder() {
+        return new ProductoBuilder();
     }
 
     public String getNombre() {
