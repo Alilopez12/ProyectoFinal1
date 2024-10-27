@@ -2,7 +2,7 @@ package co.edu.uniquindio.proyectofinal1.model;
 
 import co.edu.uniquindio.proyectofinal1.model.builder.UsuarioBuilder;
 
-public class Usuario {
+public abstract class Usuario {
     private String nombre;
     private String apellidos;
     private String cedula;
@@ -57,9 +57,6 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    public static UsuarioBuilder builder(){
-        return new UsuarioBuilder();
-    }
 
 
     @Override

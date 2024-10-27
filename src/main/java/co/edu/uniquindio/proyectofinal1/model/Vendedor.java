@@ -1,5 +1,7 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
+import co.edu.uniquindio.proyectofinal1.model.builder.VendedorBuilder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,16 +12,18 @@ public class Vendedor extends Usuario{
     private Muro muroProductos;
     private TableroDeControl tableroDeControl;
 
-    public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña) {
-        super(nombre, apellidos, cedula, direccion, contraseña);
-    }
 
-    public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña, List<Producto> listProductos, List<Chat> listChats, Muro muroProductos, TableroDeControl tableroDeControl) {
+    public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña,
+                    List<Producto> listProductos, List<Chat> listChats, Muro muroProductos, TableroDeControl tableroDeControl) {
         super(nombre, apellidos, cedula, direccion, contraseña);
         ListProductos = listProductos;
         this.listChats = listChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
+    }
+
+    public static VendedorBuilder builder() {
+        return new VendedorBuilder();
     }
 
     public List<Producto> getListProductos() {
@@ -63,4 +67,6 @@ public class Vendedor extends Usuario{
                 ", tableroDeControl=" + tableroDeControl +
                 '}';
     }
+
+
 }

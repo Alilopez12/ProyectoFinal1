@@ -2,6 +2,7 @@ package co.edu.uniquindio.proyectofinal1.mapping.mapper;
 
 import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.proyectofinal1.model.Usuario;
+import co.edu.uniquindio.proyectofinal1.model.Vendedor;
 import co.edu.uniquindio.proyectofinal1.service.IMarketPlaceMapping;
 
 import java.util.ArrayList;
@@ -33,7 +34,7 @@ public class MarketPlaceMappinglmpl implements IMarketPlaceMapping {
 
     @Override
     public Usuario usuarioDtoToUsuario(UsuarioDto usuarioDto) {
-        return Usuario.builder()
+        return Vendedor.builder()
                 .nombre(usuarioDto.nombre())
                 .apellidos(usuarioDto.apellidos())
                 .contraseña(usuarioDto.contraseña())
@@ -41,4 +42,5 @@ public class MarketPlaceMappinglmpl implements IMarketPlaceMapping {
                 .cedula(usuarioDto.cedula())
                 .build();
     }
-    }
+
+}

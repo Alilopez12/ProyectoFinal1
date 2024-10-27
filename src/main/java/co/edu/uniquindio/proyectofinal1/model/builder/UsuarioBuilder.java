@@ -3,42 +3,46 @@ package co.edu.uniquindio.proyectofinal1.model.builder;
 import co.edu.uniquindio.proyectofinal1.model.Usuario;
 
 
-public class UsuarioBuilder {
+public abstract class UsuarioBuilder<T extends UsuarioBuilder<T>> {
     protected String nombre;
     protected String apellidos;
     protected String cedula;
     protected String direccion;
     protected String contraseña;
 
-    public UsuarioBuilder nombre(String nombre) {
+    public T nombre(String nombre) {
         this.nombre = nombre;
-        return this;
+        return self();
     }
 
-    public UsuarioBuilder apellidos(String apellidos) {
+    public T apellidos(String apellidos) {
         this.apellidos = apellidos;
-        return this;
+        return self();
     }
 
-    public UsuarioBuilder cedula(String cedula) {
+    public T cedula(String cedula) {
         this.cedula = cedula;
-        return this;
+        return self();
     }
 
-    public UsuarioBuilder direccion(String direccion) {
+    public T direccion(String direccion) {
         this.direccion = direccion;
-        return this;
+        return self();
     }
 
-    public UsuarioBuilder contraseña(String contraseña) {
+    public T contraseña(String contraseña) {
         this.contraseña = contraseña;
-        return this;
+        return self();
     }
 
-    // Método build que crea la instancia de Usuario
-    public Usuario build() {
-        return new Usuario(nombre, apellidos, cedula, direccion, contraseña);
+    @SuppressWarnings("unchecked")
+    protected T self() {
+        return (T) this;
     }
+
+    public abstract Usuario build();
+
+
 }
 
 

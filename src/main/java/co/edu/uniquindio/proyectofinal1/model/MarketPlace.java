@@ -19,7 +19,7 @@ public class MarketPlace implements ICrudUsuario {
         Usuario usuarioEncontrado = verificarUsuario(cedula);
 
         if (usuarioEncontrado == null) {
-            Usuario usuario = Usuario.builder()
+            Usuario usuario = Vendedor.builder()
 
                     .nombre(nombre)
                     .apellidos(apellidos)
