@@ -6,14 +6,16 @@ import java.util.List;
 public class Producto {
 
     private String nombre;
+    private String idProducto;
     private String imagen;
     private String categoria;
     private double precio;
     private EstadoProducto estadoProducto;
     List<Publicacion> listPublicaciones = new ArrayList<>();
 
-    public Producto(String nombre, String imagen, String categoria, double precio, EstadoProducto estadoProducto, List<Publicacion> listPublicaciones) {
+    public Producto(String nombre, String idProducto, String imagen, String categoria, double precio, EstadoProducto estadoProducto, List<Publicacion> listPublicaciones) {
         this.nombre = nombre;
+        this.idProducto = idProducto;
         this.imagen = imagen;
         this.categoria = categoria;
         this.precio = precio;
@@ -27,6 +29,14 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getIdProducto() {
+        return idProducto;
+    }
+
+    public void setIdProducto(String idProducto) {
+        this.idProducto = idProducto;
     }
 
     public String getImagen() {
@@ -73,6 +83,7 @@ public class Producto {
     public String toString() {
         return "Producto{" +
                 "nombre='" + nombre + '\'' +
+                ", idProducto='" + idProducto + '\'' +
                 ", imagen='" + imagen + '\'' +
                 ", categoria='" + categoria + '\'' +
                 ", precio=" + precio +
@@ -80,6 +91,4 @@ public class Producto {
                 ", listPublicaciones=" + listPublicaciones +
                 '}';
     }
-
-
 }
