@@ -1,11 +1,11 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
-import com.gluonhq.charm.glisten.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 public class LoginViewController {
 
@@ -22,7 +22,7 @@ public class LoginViewController {
     private Button btnForgotPassword;
 
     @FXML
-    private Button btnSignIn;
+    private Button btoSignIn;
 
     @FXML
     private TextField txtPassword;
@@ -41,7 +41,17 @@ public class LoginViewController {
     }
 
     @FXML
+    void OnPassword(ActionEvent event) {
+
+    }
+
+    @FXML
     void OnSignIn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnUsername(ActionEvent event) {
 
     }
 
@@ -49,11 +59,10 @@ public class LoginViewController {
     void initialize() {
         assert btnEnter != null : "fx:id=\"btnEnter\" was not injected: check your FXML file 'login-view.fxml'.";
         assert btnForgotPassword != null : "fx:id=\"btnForgotPassword\" was not injected: check your FXML file 'login-view.fxml'.";
-        assert btnSignIn != null : "fx:id=\"btnSignIn\" was not injected: check your FXML file 'login-view.fxml'.";
+        assert btoSignIn != null : "fx:id=\"btoSignIn\" was not injected: check your FXML file 'login-view.fxml'.";
         assert txtPassword != null : "fx:id=\"txtPassword\" was not injected: check your FXML file 'login-view.fxml'.";
         assert txtUsername != null : "fx:id=\"txtUsername\" was not injected: check your FXML file 'login-view.fxml'.";
 
     }
 
 }
-

@@ -8,8 +8,6 @@ public interface IModelFactoryServices {
 
     List<UsuarioDto> obtenerUsuarios();
     boolean agregarUsuario(UsuarioDto usuarioDto);
-
     boolean eliminarUsuario(String cedula);
-
     boolean actualizarUsuario(String cedulaActual, UsuarioDto usuarioDto);
 }

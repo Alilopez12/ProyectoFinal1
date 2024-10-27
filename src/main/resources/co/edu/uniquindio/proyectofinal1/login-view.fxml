@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,9 +14,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.LoginViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.LoginViewController">
    <children>
-      <AnchorPane prefHeight="448.0" prefWidth="560.0">
+      <AnchorPane layoutX="-1.0" layoutY="6.0" prefHeight="448.0" prefWidth="560.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" height="29.0" layoutX="110.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
                <fill>
@@ -80,16 +80,20 @@
                   <Image url="@Images/marketplace.png" />
                </image>
             </ImageView>
-            <TextField fx:id="txtUsername" floatText="Username" layoutX="143.0" layoutY="233.0" />
-            <TextField fx:id="txtPassword" floatText="Password" layoutX="141.0" layoutY="275.0" />
-            <Button fx:id="btnSignIn" layoutX="125.0" layoutY="338.0" mnemonicParsing="false" onAction="#OnSignIn" prefHeight="30.0" prefWidth="89.0" text="Sign in" />
-            <Button fx:id="btnEnter" cache="true" contentDisplay="TOP" layoutX="400.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnEnter" prefHeight="36.0" prefWidth="89.0" text="ENTER" />
-            <Button fx:id="btnForgotPassword" layoutX="348.0" layoutY="381.0" mnemonicParsing="false" onAction="#OnForgotPassword" prefHeight="30.0" prefWidth="164.0" text="Forgot Password" />
             <ImageView fitHeight="88.0" fitWidth="82.0" layoutX="14.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/user-avatar-png-5.png" />
                </image>
             </ImageView>
+            <Button fx:id="btnEnter" layoutX="389.0" layoutY="338.0" mnemonicParsing="false" onAction="#OnEnter" prefHeight="30.0" prefWidth="82.0" text="Enter">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btoSignIn" layoutX="141.0" layoutY="338.0" mnemonicParsing="false" onAction="#OnSignIn" prefHeight="30.0" prefWidth="82.0" text="Sign in" />
+            <Button fx:id="btnForgotPassword" layoutX="357.0" layoutY="381.0" mnemonicParsing="false" onAction="#OnForgotPassword" prefHeight="30.0" prefWidth="150.0" text="forgot Password" />
+            <TextField fx:id="txtUsername" layoutX="138.0" layoutY="246.0" onAction="#OnUsername" text="Username" />
+            <TextField fx:id="txtPassword" layoutX="138.0" layoutY="286.0" onAction="#OnPassword" text="Password" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
