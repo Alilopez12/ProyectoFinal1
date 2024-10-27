@@ -8,7 +8,7 @@ import co.edu.uniquindio.proyectofinal1.service.IModelFactoryServices;
 import java.util.List;
 
 public class ModelFactory implements IModelFactoryServices {
-    
+
     private static ModelFactory instance;
     MarketPlace marketPlace;
     MarketPlaceMappinglmpl mapper;

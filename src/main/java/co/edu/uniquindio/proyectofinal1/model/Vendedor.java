@@ -3,21 +3,21 @@ package co.edu.uniquindio.proyectofinal1.model;
 import co.edu.uniquindio.proyectofinal1.model.builder.VendedorBuilder;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Vendedor extends Usuario{
 
-    List<Producto> ListProductos = new ArrayList<>();
-    List<Chat> listChats = new ArrayList<>();
+    Collection<Producto> listaProductos = new ArrayList<>();
+    Collection<Chat> listaChats = new ArrayList<>();
     private Muro muroProductos;
     private TableroDeControl tableroDeControl;
 
-
     public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña,
-                    List<Producto> listProductos, List<Chat> listChats, Muro muroProductos, TableroDeControl tableroDeControl) {
+                    Collection<Producto> listaProductos, Collection<Chat> listaChats, Muro muroProductos, TableroDeControl tableroDeControl) {
         super(nombre, apellidos, cedula, direccion, contraseña);
-        ListProductos = listProductos;
-        this.listChats = listChats;
+        this.listaProductos = listaProductos;
+        this.listaChats = listaChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
     }
@@ -26,20 +26,20 @@ public class Vendedor extends Usuario{
         return new VendedorBuilder();
     }
 
-    public List<Producto> getListProductos() {
-        return ListProductos;
+    public Collection<Producto> getListaProductos() {
+        return listaProductos;
     }
 
-    public void setListProductos(List<Producto> listProductos) {
-        ListProductos = listProductos;
+    public void setListaProductos(Collection<Producto> listaProductos) {
+        this.listaProductos = listaProductos;
     }
 
-    public List<Chat> getListChats() {
-        return listChats;
+    public Collection<Chat> getListaChats() {
+        return listaChats;
     }
 
-    public void setListChats(List<Chat> listChats) {
-        this.listChats = listChats;
+    public void setListaChats(Collection<Chat> listaChats) {
+        this.listaChats = listaChats;
     }
 
     public Muro getMuroProductos() {
@@ -61,8 +61,8 @@ public class Vendedor extends Usuario{
     @Override
     public String toString() {
         return "Vendedor{" +
-                "ListProductos=" + ListProductos +
-                ", listChats=" + listChats +
+                "ListProductos=" + listaProductos +
+                ", listChats=" + listaChats +
                 ", muroProductos=" + muroProductos +
                 ", tableroDeControl=" + tableroDeControl +
                 '}';
