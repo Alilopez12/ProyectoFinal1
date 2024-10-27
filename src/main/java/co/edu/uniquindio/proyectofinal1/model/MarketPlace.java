@@ -122,4 +122,5 @@ public class MarketPlace implements ICrudUsuario {
     public void setListAdministradores(List<Administrador> listAdministradores) {
         ListAdministradores = listAdministradores;
     }
+    
 }
