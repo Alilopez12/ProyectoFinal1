@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -14,7 +21,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.LoginViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.LoginViewController">
    <children>
       <AnchorPane layoutX="-1.0" layoutY="6.0" prefHeight="448.0" prefWidth="560.0">
          <children>
@@ -24,12 +31,12 @@
                      <stops>
                         <Stop>
                            <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
+                              <Color blue="1.0" green="1.0" red="1.0" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
                            <color>
-                              <Color red="0.3752000033855438" green="0.5600000023841858" blue="0.5168799757957458" opacity="0.9083969593048096" />
+                              <Color blue="0.5168799757957458" green="0.5600000023841858" opacity="0.9083969593048096" red="0.3752000033855438" />
                            </color>
                         </Stop>
                      </stops>
@@ -42,12 +49,12 @@
                      <stops>
                         <Stop>
                            <color>
-                              <Color red="0.7300000190734863" green="0.9344285726547241" blue="1.0" />
+                              <Color blue="1.0" green="0.9344285726547241" red="0.7300000190734863" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
                            <color>
-                              <Color red="0.3006213307380676" green="0.4648178517818451" blue="0.6184210777282715" />
+                              <Color blue="0.6184210777282715" green="0.4648178517818451" red="0.3006213307380676" />
                            </color>
                         </Stop>
                      </stops>
@@ -57,8 +64,8 @@
             <Circle fill="#fffd89" layoutX="419.0" layoutY="155.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
             <Circle fill="#f3ff83" layoutX="452.0" layoutY="155.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
             <Circle fill="#ebff77" layoutX="482.0" layoutY="155.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42968b" height="29.0" stroke="BLACK" strokeType="INSIDE" width="626.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42968b" height="29.0" layoutX="-3.0" layoutY="461.0" stroke="BLACK" strokeType="INSIDE" width="629.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42968b" height="29.0" layoutX="3.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="594.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42968b" height="29.0" layoutY="411.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
             <Label layoutX="141.0" layoutY="188.0" prefHeight="29.0" prefWidth="109.0" text="Log in">
                <font>
                   <Font name="High Tower Text" size="38.0" />

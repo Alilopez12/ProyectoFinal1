@@ -6,4 +6,7 @@ module co.edu.uniquindio.proyectofinal1 {
 
     opens co.edu.uniquindio.proyectofinal1 to javafx.fxml;
     exports co.edu.uniquindio.proyectofinal1;
+
+    opens co.edu.uniquindio.proyectofinal1.viewcontroller;
+    exports co.edu.uniquindio.proyectofinal1.viewcontroller;
 }
