@@ -5,107 +5,123 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.CubicCurve?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.MuroViewController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5c968f" height="68.0" stroke="BLACK" strokeType="INSIDE" width="602.0" />
-      <Text layoutX="48.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MURO">
-         <font>
-            <Font name="Arial" size="36.0" />
-         </font>
-      </Text>
-      <ScrollBar layoutX="545.0" layoutY="93.0" orientation="VERTICAL" prefHeight="262.0" prefWidth="25.0" />
-      <Line endX="76.0" endY="-1.52587890625E-5" layoutX="449.0" layoutY="84.0" startX="-100.0" />
-      <CubicCurve controlX1="-39.19999694824219" controlX2="11.200027465820312" controlY1="-23.599990844726562" controlY2="23.599990844726562" endX="46.39997863769531" endY="-1.52587890625E-5" fill="#04182b" layoutX="128.0" layoutY="101.0" startX="-79.92771911621094" startY="-1.1712188720703125" stroke="BLACK" />
-      <CubicCurve controlX1="-39.19999694824219" controlX2="11.200027465820312" controlY1="-23.599990844726562" controlY2="23.599990844726562" endX="68.1998291015625" endY="-2.1712188720703125" fill="#03172b" layoutX="255.0" layoutY="101.0" startX="-79.40629577636719" startY="-0.2977142333984375" stroke="BLACK" />
-      <CubicCurve controlX1="-45.99998474121094" controlX2="1.20001220703125" controlY1="-19.79998779296875" controlY2="31.4000244140625" endX="53.8194580078125" endY="7.183837890625" fill="#031c33" layoutX="269.0" layoutY="327.0" startX="-77.19999694824219" startY="8.32080078125" stroke="BLACK" />
-      <CubicCurve controlX1="-101.60003662109375" controlX2="-52.79998779296875" controlY1="46.19999694824219" controlY2="46.19999694824219" endX="-78.4000244140625" endY="119.80000305175781" fill="#03192e" layoutX="401.0" layoutY="100.0" startX="-78.40000915527344" startY="-1.52587890625E-5" stroke="BLACK" />
-      <CubicCurve controlX1="-96.4000244140625" controlX2="-48.4000244140625" controlY1="30.20001220703125" controlY2="30.20001220703125" endX="-71.017333984375" endY="101.762451171875" fill="#051b30" layoutX="395.0" layoutY="232.0" startX="-71.017333984375" startY="-18.400009155273438" stroke="BLACK" />
-      <CubicCurve controlX1="-45.99998474121094" controlX2="-21.999984741210938" controlY1="-19.79998779296875" controlY2="34.0" endX="38.27435302734375" endY="8.32080078125" fill="#041a2e" layoutX="155.0" layoutY="326.0" startX="-107.89585876464844" startY="9.302734375" stroke="BLACK" />
-      <CubicCurve controlX1="-101.60003662109375" controlX2="-52.0" controlY1="46.19999694824219" controlY2="46.19999694824219" endX="-78.40000915527344" endY="104.59999084472656" fill="#041b30" layoutX="124.0" layoutY="110.0" startX="-77.10691833496094" startY="-9.297714233398438" stroke="BLACK" />
-      <CubicCurve controlX1="-100.20001220703125" controlX2="-51.79997253417969" controlY1="48.600006103515625" controlY2="31.199996948242188" endX="-75.32035827636719" endY="114.185302734375" fill="#031d36" layoutX="123.0" layoutY="220.0" startX="-76.26860046386719" startY="-4.2384185791015625" stroke="BLACK" />
-      <Text layoutX="116.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicación #1">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="74.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producto:">
-         <font>
-            <Font name="Agency FB" size="15.0" />
-         </font>
-      </Text>
-      <Text layoutX="74.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="celular SMARTPHONE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#54f4f2" height="83.0" layoutX="89.0" layoutY="197.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
-      <Text layoutX="82.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por:">
-         <font>
-            <Font name="Agency FB" size="15.0" />
-         </font>
-      </Text>
-      <Text layoutX="154.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AndreyOchoa132" />
-      <Text layoutX="183.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:">
-         <font>
-            <Font name="Agency FB" size="15.0" />
-         </font>
-      </Text>
-      <Text layoutX="183.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Me gusta:">
-         <font>
-            <Font name="Agency FB" size="15.0" />
-         </font>
-      </Text>
-      <Button fx:id="btnVerMas" layoutX="189.0" layoutY="211.0" mnemonicParsing="false" onAction="#OnVerMas" prefHeight="30.0" prefWidth="67.0" text="Ver más" textFill="#c12f43" />
-      <Line endX="-100.0" endY="164.4000244140625" layoutX="448.0" layoutY="86.0" startX="-100.0" />
-      <Line endX="-100.0" endY="164.4000244140625" layoutX="625.0" layoutY="86.0" startX="-100.0" />
-      <Line endX="76.0" endY="-1.52587890625E-5" layoutX="449.0" layoutY="251.0" startX="-100.0" />
-      <Text layoutX="355.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Últimas notificaciones:">
-         <font>
-            <Font name="Agency FB" size="16.0" />
-         </font>
-      </Text>
-      <Text layoutX="406.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lisa:" />
-      <Text layoutX="354.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayy holii, estaba pensando en ti para el cel" wrappingWidth="166.61248779296875">
-         <font>
-            <Font size="11.0" />
-         </font>
-      </Text>
-      <Button fx:id="btnChats" layoutX="406.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnChats" prefHeight="30.0" prefWidth="67.0" text="CHATS">
-         <font>
-            <Font name="Agency FB" size="16.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="355.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/avatar2m.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="505.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/campana.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="237.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/meGusta.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="267.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="42" />
-      <ImageView fitHeight="68.0" fitWidth="57.0" layoutX="104.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="400.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#182e43" height="73.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="455.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="320.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="320.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="117.0" layoutX="455.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="285.0" layoutX="14.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+      <ScrollBar layoutX="581.0" layoutY="111.0" orientation="VERTICAL" prefHeight="246.0" prefWidth="22.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="110.0" layoutX="39.0" layoutY="173.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <ImageView fitHeight="87.0" fitWidth="68.0" layoutX="67.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/celularc.PNG" />
          </image>
       </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="262.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+      <Text layoutX="87.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
+      <Text layoutX="51.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: celular smartphone" />
+      <Text layoutX="161.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
+      <Text layoutX="160.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="20.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: AndreyOchoa132" wrappingWidth="201.16172790527344" />
+      <Button fx:id="btnIngresarAlChat" layoutX="85.0" layoutY="326.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
+      <Button fx:id="btnVerMas" layoutX="166.0" layoutY="200.0" mnemonicParsing="false" onAction="#OnVerMas" prefHeight="30.0" prefWidth="69.0" text="Ver más">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMeGusta" layoutX="166.0" layoutY="250.0" mnemonicParsing="false" onAction="#OnMeGusta" text="Me gusta" />
+      <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="221.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/avatarh.png" />
          </image>
       </ImageView>
-      <Circle fill="#f7d023" layoutX="558.0" layoutY="36.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#f7d023" layoutX="460.0" layoutY="36.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#f7d023" layoutX="510.0" layoutY="36.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="73.0" fitWidth="70.0" layoutX="335.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/audifonos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="79.0" layoutX="466.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/control%20g.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="90.0" layoutX="474.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/mouse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="79.0" layoutX="331.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/pila-cargador.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="352.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="audifonos">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="476.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="control de juego">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="348.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cargador 5V">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="492.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mouse ">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="387.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="52">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="518.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="106">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="388.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="79">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Text layoutX="517.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="128">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="16.0" fitWidth="13.0" layoutX="399.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/meGusta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="13.0" layoutX="534.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/meGusta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="399.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/meGusta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="534.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/meGusta.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

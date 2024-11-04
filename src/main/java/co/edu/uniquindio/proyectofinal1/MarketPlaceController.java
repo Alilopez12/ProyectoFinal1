@@ -15,7 +15,7 @@ public class MarketPlaceController {
     @FXML
     protected void onHelloButtonClick() throws IOException {
         welcomeText.setText("Welcome to JavaFX Application!");
-        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("muro-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("contactos-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Hello!");

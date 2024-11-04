@@ -15,13 +15,21 @@ public class MuroViewController {
     private URL location;
 
     @FXML
-    private Button btnChats;
+    private Button btnIngresarAlChat;
+
+    @FXML
+    private Button btnMeGusta;
 
     @FXML
     private Button btnVerMas;
 
     @FXML
-    void OnChats(ActionEvent event) {
+    void OnIngresarAlChat(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnMeGusta(ActionEvent event) {
 
     }
 
@@ -32,7 +40,8 @@ public class MuroViewController {
 
     @FXML
     void initialize() {
-        assert btnChats != null : "fx:id=\"btnChats\" was not injected: check your FXML file 'muro-view.fxml'.";
+        assert btnIngresarAlChat != null : "fx:id=\"btnIngresarAlChat\" was not injected: check your FXML file 'muro-view.fxml'.";
+        assert btnMeGusta != null : "fx:id=\"btnMeGusta\" was not injected: check your FXML file 'muro-view.fxml'.";
         assert btnVerMas != null : "fx:id=\"btnVerMas\" was not injected: check your FXML file 'muro-view.fxml'.";
 
     }

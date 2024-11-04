@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.PerfilUsuarioViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="60.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#32597e" height="13.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e2edf7" height="322.0" layoutX="-1.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="111.0" fitWidth="116.0" layoutX="49.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatar2m.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="53.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDOR" textAlignment="CENTER" wrappingWidth="103.50506591796875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="66.0" layoutX="352.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/estrella.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="36.0" layoutX="518.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/estrella.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="36.0" layoutX="434.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/estrella.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="476.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/estrella.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="393.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/estrella.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="60.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulinaRubio777" />
+      <Text layoutX="60.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contactos: 4" />
+      <Text layoutX="60.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de ventas: 12" />
+      <Button fx:id="btnActualizarInformacion" layoutX="50.0" layoutY="334.0" mnemonicParsing="false" onAction="#OnActualizarInformacion" text="Actualizar información" />
+      <Text layoutX="243.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calificación:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="233.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="66.0" layoutX="249.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatarh.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="232.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="247.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AndreyOchoa132">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="340.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatar%20mujer%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="69.0" layoutX="432.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/hombre%20avatar%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="60.0" layoutX="519.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/mujer%20avatar1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="526.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mariana453">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text layoutX="344.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IsabellaTH789">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text layoutX="430.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MarioAndres98">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="51.0" fitWidth="61.0" layoutX="249.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/audifonos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="60.0" layoutX="342.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/control%20g.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="523.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/mouse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="61.0" layoutX="429.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/pila-cargador.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="254.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audifonos">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text layoutX="354.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Control">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text layoutX="435.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargador 5V">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text layoutX="536.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mouse">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
