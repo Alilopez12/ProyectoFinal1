@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="409.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.TableroControlViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#656565" height="400.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#263c51" height="17.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#284057" height="17.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+      <DatePicker layoutX="57.0" layoutY="226.0" />
+      <Label layoutX="170.0" layoutY="30.0" text="TABLERO DE CONTROL">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLUE" />
+                  <Stop color="#221010" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="173.0" layoutY="59.0" prefHeight="2.0" prefWidth="255.0" />
+      <ImageView fitHeight="17.0" fitWidth="49.0" layoutX="506.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/iconosVV.PNG" />
+         </image>
+      </ImageView>
+      <TextField layoutX="57.0" layoutY="142.0" />
+      <TextField layoutX="57.0" layoutY="267.0" prefHeight="27.0" prefWidth="232.0" />
+      <TextField layoutX="57.0" layoutY="183.0" />
+      <Label layoutX="69.0" layoutY="94.0" prefHeight="24.0" prefWidth="138.0" text="INDICADORES">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#5b5656" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="147.0" text="CANTIDAD MENSAJES" />
+      <Label layoutX="63.0" layoutY="231.0" text="CANTIDAD PRODUCTOS" />
+      <Label layoutX="66.0" layoutY="188.0" text="CANTIDAD CONTACTOS" />
+      <Label layoutX="59.0" layoutY="272.0" text="CANTIDAD PRODUCTOS PUBLICADOS" />
+      <Label layoutX="102.0" layoutY="333.0" text="TOP PRODUCTOS" textFill="#afb213">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMostrar" layoutX="254.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnMostrar" text="Mostrar" />
+      <Label layoutX="239.0" layoutY="147.0" text="Label" textFill="WHITE" />
+      <Label layoutX="239.0" layoutY="188.0" text="Label" textFill="WHITE" />
+      <Label layoutX="266.0" layoutY="231.0" text="Label" textFill="WHITE" />
+      <Label layoutX="307.0" layoutY="272.0" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="45.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/pngtree-trophy-png-image_7189066.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

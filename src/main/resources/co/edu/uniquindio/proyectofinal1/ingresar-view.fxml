@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="434.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.IngresarViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3339" height="432.0" layoutX="106.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutX="106.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="106.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Label layoutX="200.0" layoutY="29.0" prefHeight="22.0" prefWidth="182.0" text="REGISTRO DE USUARIO">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.3651685393258427" centerY="0.34615384615384615" radius="0.5">
+               <stops>
+                  <Stop color="#ff00d9" />
+                  <Stop color="#5b1348" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="36.0" layoutY="93.0" prefHeight="22.0" prefWidth="66.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutX="107.0" layoutY="417.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <TextField layoutX="210.0" layoutY="116.0" promptText="FirstName" />
+      <TextField layoutX="210.0" layoutY="160.0" promptText="LastName" />
+      <TextField layoutX="210.0" layoutY="203.0" promptText="Email" />
+      <TextField layoutX="210.0" layoutY="246.0" promptText="Username" />
+      <TextField layoutX="210.0" layoutY="286.0" promptText="Password" />
+      <MenuButton fx:id="btnRol" layoutX="211.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnRol" text="Rol">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnRegistrarse" layoutX="120.0" layoutY="384.0" mnemonicParsing="false" onAction="#OnRegistrarse" text="Registrarse" />
+      <Button fx:id="btnBack" layoutX="382.0" layoutY="384.0" mnemonicParsing="false" onAction="#Onback" text="Back" />
+      <ImageView fitHeight="37.0" fitWidth="54.0" layoutX="272.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icono-PF.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="11.0" fitWidth="72.0" layoutX="428.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/iconosVV.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
