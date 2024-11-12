@@ -71,7 +71,7 @@
             <Image url="@Images/exporar-icon%7D.PNG" />
          </image>
       </ImageView>
-      <Button fx:id="btnExportar" layoutX="431.0" layoutY="293.0" mnemonicParsing="false" text="Exportar">
+      <Button fx:id="btnExportar" layoutX="431.0" layoutY="293.0" mnemonicParsing="false" onAction="#OnExportarReporte" text="Exportar">
          <font>
             <Font name="High Tower Text" size="12.0" />
          </font>
