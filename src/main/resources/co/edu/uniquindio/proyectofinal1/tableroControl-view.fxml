@@ -61,10 +61,10 @@
          </font>
       </Label>
       <Button fx:id="btnMostrar" layoutX="254.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnMostrar" text="Mostrar" />
-      <Label layoutX="239.0" layoutY="147.0" text="Label" textFill="WHITE" />
-      <Label layoutX="239.0" layoutY="188.0" text="Label" textFill="WHITE" />
-      <Label layoutX="266.0" layoutY="231.0" text="Label" textFill="WHITE" />
-      <Label layoutX="307.0" layoutY="272.0" text="Label" textFill="WHITE" />
+      <Label fx:id="idMensajes" layoutX="239.0" layoutY="147.0" text="Label" textFill="WHITE" />
+      <Label fx:id="idContactos" layoutX="239.0" layoutY="188.0" text="Label" textFill="WHITE" />
+      <Label fx:id="idProductos" layoutX="266.0" layoutY="231.0" text="Label" textFill="WHITE" />
+      <Label fx:id="s" layoutX="307.0" layoutY="272.0" text="Label" textFill="WHITE" />
       <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="45.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/pngtree-trophy-png-image_7189066.png" />
