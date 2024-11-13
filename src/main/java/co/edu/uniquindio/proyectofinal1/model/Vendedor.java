@@ -1,5 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
+import co.edu.uniquindio.proyectofinal1.model.builder.ProductoBuilder;
 import co.edu.uniquindio.proyectofinal1.model.builder.VendedorBuilder;
 
 import java.util.ArrayList;
@@ -12,19 +13,19 @@ public class Vendedor extends Usuario{
     Collection<Chat> listaChats = new ArrayList<>();
     private Muro muroProductos;
     private TableroDeControl tableroDeControl;
+    private List<Vendedor> contactos;
 
-    public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña,
-                    Collection<Producto> listaProductos, Collection<Chat> listaChats, Muro muroProductos, TableroDeControl tableroDeControl) {
+
+    public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña, Collection<Producto> listaProductos, Collection<Chat> listaChats, Muro muroProductos, TableroDeControl tableroDeControl, List<Vendedor> contactos) {
         super(nombre, apellidos, cedula, direccion, contraseña);
         this.listaProductos = listaProductos;
         this.listaChats = listaChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
+        this.contactos = contactos;
     }
 
-    public static VendedorBuilder builder() {
-        return new VendedorBuilder();
-    }
+
 
     public Collection<Producto> getListaProductos() {
         return listaProductos;
@@ -58,15 +59,26 @@ public class Vendedor extends Usuario{
         this.tableroDeControl = tableroDeControl;
     }
 
+    public List<Vendedor> getContactos() {
+        return contactos;
+    }
+
+    public void setContactos(List<Vendedor> contactos) {
+        this.contactos = contactos;
+    }
+
+    public static VendedorBuilder builder() {
+        return new VendedorBuilder();
+    }
+
     @Override
     public String toString() {
         return "Vendedor{" +
-                "ListProductos=" + listaProductos +
-                ", listChats=" + listaChats +
+                "listaProductos=" + listaProductos +
+                ", listaChats=" + listaChats +
                 ", muroProductos=" + muroProductos +
                 ", tableroDeControl=" + tableroDeControl +
+                ", contactos=" + contactos +
                 '}';
     }
-
-
 }
