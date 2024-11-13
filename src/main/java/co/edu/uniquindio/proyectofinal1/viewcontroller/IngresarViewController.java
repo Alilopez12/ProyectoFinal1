@@ -1,12 +1,12 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.scene.control.TextField;
 
 public class IngresarViewController {
 
@@ -20,19 +20,33 @@ public class IngresarViewController {
     private Button btnBack;
 
     @FXML
+    private Button btnRegistrarse;
+
+    @FXML
     private MenuButton btnRol;
 
     @FXML
-    private Button btnRegistrarse;
-
+    private TextField txtEmail;
 
     @FXML
-    void OnRol(ActionEvent event) {
+    private TextField txtFirstName;
+
+    @FXML
+    private TextField txtLastName;
+
+    @FXML
+    private TextField txtPassword;
+
+    @FXML
+    private TextField txtUsername;
+
+    @FXML
+    void OnRegistrarse(ActionEvent event) {
 
     }
 
     @FXML
-    void OnRegistrarse(ActionEvent event) {
+    void OnRol(ActionEvent event) {
 
     }
 
@@ -44,8 +58,14 @@ public class IngresarViewController {
     @FXML
     void initialize() {
         assert btnBack != null : "fx:id=\"btnBack\" was not injected: check your FXML file 'ingresar-view.fxml'.";
-        assert btnRol != null : "fx:id=\"btnRol\" was not injected: check your FXML file 'ingresar-view.fxml'.";
         assert btnRegistrarse != null : "fx:id=\"btnRegistrarse\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert btnRol != null : "fx:id=\"btnRol\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert txtEmail != null : "fx:id=\"txtEmail\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert txtFirstName != null : "fx:id=\"txtFirstName\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert txtLastName != null : "fx:id=\"txtLastName\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert txtPassword != null : "fx:id=\"txtPassword\" was not injected: check your FXML file 'ingresar-view.fxml'.";
+        assert txtUsername != null : "fx:id=\"txtUsername\" was not injected: check your FXML file 'ingresar-view.fxml'.";
 
     }
+
 }

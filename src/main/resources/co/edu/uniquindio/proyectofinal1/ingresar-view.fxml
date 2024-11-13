@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.shape.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="434.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.IngresarViewController">
+<AnchorPane prefHeight="434.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.IngresarViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3339" height="432.0" layoutX="106.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutX="106.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
@@ -35,11 +37,11 @@
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutX="107.0" layoutY="417.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
-      <TextField layoutX="210.0" layoutY="116.0" promptText="FirstName" />
-      <TextField layoutX="210.0" layoutY="160.0" promptText="LastName" />
-      <TextField layoutX="210.0" layoutY="203.0" promptText="Email" />
-      <TextField layoutX="210.0" layoutY="246.0" promptText="Username" />
-      <TextField layoutX="210.0" layoutY="286.0" promptText="Password" />
+      <TextField fx:id="txtFirstName" layoutX="210.0" layoutY="116.0" promptText="FirstName" />
+      <TextField fx:id="txtLastName" layoutX="210.0" layoutY="160.0" promptText="LastName" />
+      <TextField fx:id="txtEmail" layoutX="210.0" layoutY="203.0" promptText="Email" />
+      <TextField fx:id="txtUsername" layoutX="210.0" layoutY="246.0" promptText="Username" />
+      <TextField fx:id="txtPassword" layoutX="210.0" layoutY="286.0" promptText="Password" />
       <MenuButton fx:id="btnRol" layoutX="211.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnRol" text="Rol">
         <items>
           <MenuItem mnemonicParsing="false" text="Action 1" />
