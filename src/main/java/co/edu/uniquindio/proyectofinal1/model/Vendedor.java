@@ -16,16 +16,26 @@ public class Vendedor extends Usuario{
     private List<Vendedor> contactos;
 
 
+
     public Vendedor(String nombre, String apellidos, String cedula, String direccion, String contraseña, Collection<Producto> listaProductos, Collection<Chat> listaChats, Muro muroProductos, TableroDeControl tableroDeControl, List<Vendedor> contactos) {
         super(nombre, apellidos, cedula, direccion, contraseña);
         this.listaProductos = listaProductos;
         this.listaChats = listaChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
-        this.contactos = contactos;
+        this.contactos = new ArrayList<>();
     }
 
-
+    public String agregarContacto(Vendedor contacto) {
+        if (this.contactos.size() >= 10) {
+            return "No se puede agregar más contactos, límite alcanzado.";
+        } else if (this.contactos.contains(contacto)) {
+            return "El contacto ya está en la lista.";
+        } else {
+            this.contactos.add(contacto);
+            return "Contacto agregado con éxito.";
+        }
+    }
 
     public Collection<Producto> getListaProductos() {
         return listaProductos;
