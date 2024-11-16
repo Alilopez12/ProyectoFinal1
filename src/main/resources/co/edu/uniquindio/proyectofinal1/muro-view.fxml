@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.MuroViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.MuroViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="400.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#182e43" height="73.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
@@ -20,24 +26,24 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="285.0" layoutX="14.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
       <ScrollBar layoutX="581.0" layoutY="111.0" orientation="VERTICAL" prefHeight="246.0" prefWidth="22.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="110.0" layoutX="39.0" layoutY="173.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
-      <ImageView fitHeight="87.0" fitWidth="68.0" layoutX="67.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="110.0" layoutX="23.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <ImageView fitHeight="87.0" fitWidth="68.0" layoutX="51.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/celularc.PNG" />
          </image>
       </ImageView>
       <Text layoutX="87.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
       <Text layoutX="51.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: celular smartphone" />
-      <Text layoutX="161.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
+      <Text layoutX="130.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
       <Text layoutX="160.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <Text layoutX="20.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: AndreyOchoa132" wrappingWidth="201.16172790527344" />
       <Button fx:id="btnIngresarAlChat" layoutX="85.0" layoutY="326.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
-      <Button fx:id="btnVerMas" layoutX="166.0" layoutY="200.0" mnemonicParsing="false" onAction="#OnVerMas" prefHeight="30.0" prefWidth="69.0" text="Ver más">
+      <Button fx:id="btnVerMas" layoutX="132.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerMas" prefHeight="30.0" prefWidth="69.0" text="Ver más">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <Button fx:id="btnMeGusta" layoutX="166.0" layoutY="250.0" mnemonicParsing="false" onAction="#OnMeGusta" text="Me gusta" />
+      <Button fx:id="btnMeGusta" layoutX="132.0" layoutY="247.0" mnemonicParsing="false" onAction="#OnMeGusta" text="Me gusta" />
       <ImageView fitHeight="30.0" fitWidth="70.0" layoutX="221.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/avatarh.png" />
@@ -123,5 +129,6 @@
             <Image url="@Images/meGusta.png" />
          </image>
       </ImageView>
+      <Label fx:id="megustalabel" layoutX="206.0" layoutY="252.0" text="Label" />
    </children>
 </AnchorPane>

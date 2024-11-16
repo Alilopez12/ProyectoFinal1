@@ -1,4 +1,4 @@
-package co.edu.uniquindio.proyectofinal1.viewcontroller;
+package co.edu.uniquindio.proyectofinal1.model;
 
 import co.edu.uniquindio.proyectofinal1.service.MeGustaObserver;
 

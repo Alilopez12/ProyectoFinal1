@@ -9,4 +9,8 @@ module co.edu.uniquindio.proyectofinal1 {
 
     opens co.edu.uniquindio.proyectofinal1.viewcontroller;
     exports co.edu.uniquindio.proyectofinal1.viewcontroller;
+    exports co.edu.uniquindio.proyectofinal1.service;
+    opens co.edu.uniquindio.proyectofinal1.service;
+    exports co.edu.uniquindio.proyectofinal1.model;
+    opens co.edu.uniquindio.proyectofinal1.model;
 }
