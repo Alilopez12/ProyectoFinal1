@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class totalProductosViewController {
+public class TotalProductosViewController {
 
     @FXML
     private ResourceBundle resources;
