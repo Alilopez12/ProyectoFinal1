@@ -1,6 +1,5 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
-import co.edu.uniquindio.proyectofinal1.model.builder.AdministradorBuilder;
 import co.edu.uniquindio.proyectofinal1.model.builder.ProductoBuilder;
 
 import java.util.ArrayList;

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -15,7 +22,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.ContactosViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.ContactosViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#35393c" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00213c" height="33.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
@@ -24,7 +31,7 @@
             <Image url="@Images/icono-PF.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="80.0" layoutX="505.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="80.0" layoutX="505.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/iconosVV.PNG" />
          </image>
@@ -39,7 +46,7 @@
       <ScrollBar layoutX="530.0" layoutY="83.0" orientation="VERTICAL" prefHeight="289.0" prefWidth="30.0" />
       <Label layoutX="280.0" layoutY="97.0" prefHeight="55.0" prefWidth="157.0" text="Contactos">
          <font>
-            <Font name="Monotype Corsiva" size="43.0" />
+            <Font size="34.0" />
          </font>
       </Label>
       <Circle fill="#232628" layoutX="460.0" layoutY="125.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
@@ -74,12 +81,12 @@
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.42105263471603394" green="0.09551656991243362" blue="0.09551656991243362" />
+                        <Color blue="0.09551656991243362" green="0.09551656991243362" red="0.42105263471603394" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.08284600079059601" green="0.33414554595947266" blue="0.5263158082962036" />
+                        <Color blue="0.5263158082962036" green="0.33414554595947266" red="0.08284600079059601" />
                      </color>
                   </Stop>
                </stops>
@@ -118,17 +125,17 @@
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.9928571581840515" green="1.0" />
+                        <Color green="1.0" red="0.9928571581840515" />
                      </color>
                   </Stop>
                   <Stop offset="0.006711409395973154">
                      <color>
-                        <Color red="0.9928571581840515" green="1.0" />
+                        <Color green="1.0" red="0.9928571581840515" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.6710526347160339" green="0.45855262875556946" />
+                        <Color green="0.45855262875556946" red="0.6710526347160339" />
                      </color>
                   </Stop>
                </stops>

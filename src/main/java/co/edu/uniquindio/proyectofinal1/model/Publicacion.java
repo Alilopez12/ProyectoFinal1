@@ -5,15 +5,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Publicacion {
-
+    private Producto producto;
     private LocalDateTime fechaPublicacion;
     private int likes;
     List<Comentario> listComentarios = new ArrayList<>();
+
 
     public Publicacion(LocalDateTime fechaPublicacion, int likes, List<Comentario> listComentarios) {
         this.fechaPublicacion = fechaPublicacion;
         this.likes = likes;
         this.listComentarios = listComentarios;
+    }
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 
     public LocalDateTime getFechaPublicacion() {

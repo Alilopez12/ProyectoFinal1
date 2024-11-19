@@ -14,6 +14,8 @@ public class Vendedor extends Usuario{
     private Muro muroProductos;
     private TableroDeControl tableroDeControl;
     private List<Vendedor> contactos;
+    private List<Comentario> comentarios = new ArrayList<>();
+
 
 
 
@@ -23,7 +25,8 @@ public class Vendedor extends Usuario{
         this.listaChats = listaChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
-        this.contactos = contactos;
+        this.contactos = new ArrayList<>();
+        this.comentarios = new ArrayList<>();
     }
 
     public String agregarContacto(Vendedor contacto) {
@@ -35,6 +38,46 @@ public class Vendedor extends Usuario{
             this.contactos.add(contacto);
             return "Contacto agregado con éxito.";
         }
+    }
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public boolean agregarComentario(String comentarioTexto, Producto producto, Vendedor vendedorQueComenta) {
+
+        if (producto.getEstadoProducto() != EstadoProducto.PUBLICADO) {
+            System.out.println("El producto no está en estado PUBLICADO.");
+            return false;
+        }
+
+        if (!this.contactos.contains(vendedorQueComenta)) {
+            System.out.println("No tienes permiso para comentar en este producto.");
+            return false;
+        }
+
+        Publicacion publicacion = producto.getListPublicaciones().stream().findFirst().orElse(null);
+        if (publicacion == null) {
+            System.out.println("El producto no tiene una publicación asociada.");
+            return false;
+        }
+
+        Comentario comentario = new Comentario(comentarioTexto, publicacion, vendedorQueComenta);
+        publicacion.getListComentarios().add(comentario);
+
+        System.out.println("Comentario agregado exitosamente.");
+        return true;
+    }
+
+    private void notificarNuevoComentario(Comentario comentario) {
+        //información del comentario y la publicación
+        String comentarioTexto = comentario.getComentario();
+        String productoAsociado = comentario.getPublicacion().getProducto().getNombre();
+
+        // Notificación en consola (puedes integrar un sistema de eventos o enviar notificaciones reales)
+        System.out.println("¡Nuevo comentario recibido!");
+        System.out.println("Comentario: " + comentarioTexto);
+        System.out.println("Producto: " + productoAsociado);
+        System.out.println("Publicado en: " + comentario.getPublicacion().toString());
     }
 
     public Collection<Producto> getListaProductos() {
@@ -90,5 +133,8 @@ public class Vendedor extends Usuario{
                 ", tableroDeControl=" + tableroDeControl +
                 ", contactos=" + contactos +
                 '}';
+    }
+
+    public void relacionComentario(Comentario comentario) {
     }
 }
