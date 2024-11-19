@@ -50,7 +50,14 @@ public class EstadisticasViewController {
 
     }
     @FXML
-    void onGenerarVendedores(ActionEvent event) {
+    void onGenerarVendedores(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("GenerarTotalVendedores-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
 
     }
 
