@@ -97,11 +97,26 @@ public class Vendedor1ViewController implements MeGustaObserver {
     }
 
     @FXML
-    void OnInfoSmartphone(ActionEvent event) {
+    void OnInfoSmartphone(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("smartphone-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
+
     }
 
     @FXML
-    void OnInfoAudifonos(ActionEvent event) {
+    void OnInfoAudifonos(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("audifonos.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
 
     }
 
