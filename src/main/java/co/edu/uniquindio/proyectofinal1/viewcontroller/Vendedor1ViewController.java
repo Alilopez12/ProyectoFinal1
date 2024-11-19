@@ -100,6 +100,11 @@ public class Vendedor1ViewController {
     }
 
     @FXML
+    public void OnInfoAudifonos(ActionEvent event) {
+
+    }
+
+    @FXML
     void OnIngresarChat(ActionEvent event) {
 
     }
@@ -121,16 +126,6 @@ public class Vendedor1ViewController {
 
     @FXML
     void OnMeGustaSmartphone(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnProductosAlbertoDiazC(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnProductosAndreyOchoa132(ActionEvent event) {
 
     }
 
