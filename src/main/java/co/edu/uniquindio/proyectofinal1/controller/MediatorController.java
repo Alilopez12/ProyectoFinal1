@@ -11,7 +11,7 @@ public class MediatorController {
         Comentario comentario = new Comentario(contenidoComentario, publicacion, vendedor);
 
         // relaciona comentario con vededor
-        vendedor.agregarComentario(comentario);
+        vendedor.relacionComentario(comentario);
         System.out.println("Notificación: El vendedor " + vendedor.getNombre() + " ha recibido un nuevo comentario en la publicación: " + publicacion);
     }
 }

@@ -134,4 +134,7 @@ public class Vendedor extends Usuario{
                 ", contactos=" + contactos +
                 '}';
     }
+
+    public void relacionComentario(Comentario comentario) {
+    }
 }
