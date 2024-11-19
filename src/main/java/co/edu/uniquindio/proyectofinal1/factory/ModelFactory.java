@@ -84,32 +84,32 @@ public class ModelFactory implements IModelFactoryServices {
 
         // Crear los vendedores
         Vendedor vendedor1 = Vendedor.builder()
-                .nombre("Macarena")
-                .apellidos("López Martinez")
+                .nombre("Andrey")
+                .apellidos("Ochoa")
                 .cedula("418956315")
                 .direccion("Villa nueva")
                 .contraseña("3351.kdn")
                 .build();
 
         Vendedor vendedor2 = Vendedor.builder()
-                .nombre("Carlos")
-                .apellidos("González Pérez")
+                .nombre("Paulina")
+                .apellidos("Rubio")
                 .cedula("342857130")
                 .direccion("Calle 45, Bogotá")
                 .contraseña("1234.abcd")
                 .build();
 
         Vendedor vendedor3 = Vendedor.builder()
-                .nombre("Lucía")
-                .apellidos("Ramírez Soto")
+                .nombre("HackMath120")
+                .apellidos("Math")
                 .cedula("987654321")
                 .direccion("Barrio el Prado")
                 .contraseña("abcd.4321")
                 .build();
 
         Vendedor vendedor4 = Vendedor.builder()
-                .nombre("José")
-                .apellidos("Martínez Herrera")
+                .nombre("PaulHappy")
+                .apellidos("Happy happy")
                 .cedula("556823908")
                 .direccion("Avenida Libertador")
                 .contraseña("lima.3214")
@@ -162,47 +162,6 @@ public class ModelFactory implements IModelFactoryServices {
                 .direccion("Paseo del Parque")
                 .contraseña("felipe.8765")
                 .build();
-
-        Vendedor vendedor11 = Vendedor.builder()
-                .nombre("Gabriela")
-                .apellidos("Morales Sánchez")
-                .cedula("236587413")
-                .direccion("Calle del Norte")
-                .contraseña("gabi.4321")
-                .build();
-
-        Vendedor vendedor12 = Vendedor.builder()
-                .nombre("Eduardo")
-                .apellidos("Castro Rodríguez")
-                .cedula("541298763")
-                .direccion("Avenida Central")
-                .contraseña("edu.8765")
-                .build();
-
-        Vendedor vendedor13 = Vendedor.builder()
-                .nombre("Raquel")
-                .apellidos("Jiménez Ruiz")
-                .cedula("625489037")
-                .direccion("Calle 10")
-                .contraseña("raquel.6789")
-                .build();
-
-        Vendedor vendedor14 = Vendedor.builder()
-                .nombre("Fernando")
-                .apellidos("Pérez García")
-                .cedula("847102635")
-                .direccion("Paseo de la Reforma")
-                .contraseña("fer.2345")
-                .build();
-
-        Vendedor vendedor15 = Vendedor.builder()
-                .nombre("María")
-                .apellidos("Vázquez López")
-                .cedula("983672541")
-                .direccion("Calle Nueva")
-                .contraseña("maria.5678")
-                .build();
-
 
         // Crear los productos
         Producto producto1 = ObtencionFactory.getFactory("electrónica").crearProducto(
