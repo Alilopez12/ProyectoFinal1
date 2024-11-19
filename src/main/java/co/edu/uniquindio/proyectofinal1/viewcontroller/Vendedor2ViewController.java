@@ -17,45 +17,61 @@ public class Vendedor2ViewController {
     private URL location;
 
     @FXML
-    private Button btnActualizarInfo;
-
-    @FXML
     private Button btnBuscar;
 
     @FXML
     private Button btnChat;
 
     @FXML
-    private Button btnInfo;
+    private Button btnInfoCmisaNegra;
+
+    @FXML
+    private Button btnInfoZapatosElegantes;
 
     @FXML
     private Button btnIngresarAlChat;
 
     @FXML
-    private Button btnMeGusta;
+    private Button btnIngresarAlChat1;
 
     @FXML
-    private Button btnProductos;
+    private Button btnMeGustaCamisaNegra;
 
     @FXML
-    private Button btnVer;
+    private Button btnMeGustaZapatosNegros;
 
     @FXML
-    private Button btnVerMas;
+    private Button btnProductosHacMath120;
+
+    @FXML
+    private Button btnProductosPaulinaRubio777;
+
+    @FXML
+    private Button btnVerHacMath120;
+
+    @FXML
+    private Button btnVerMasComentariosCamisaNegra;
+
+    @FXML
+    private Button btnVerMasZapatosNegros;
+
+    @FXML
+    private Button btnVerPaulHappy;
+
+    @FXML
+    private Button btnVerPaulinaRubio777;
+
+    @FXML
+    private Button btnVerProductosAndreyOchoa132;
 
     @FXML
     private Label labelMeGusta;
 
     @FXML
-    private Label labelNumeroContactos;
+    private Label labelMeGusta1;
 
     @FXML
-    private Label labelNumeroDeVentas;
-
-    @FXML
-    void OnActualizarInformación(ActionEvent event) {
-
-    }
+    private Label labelNumeroContactosAndreyOchoa132;
 
     @FXML
     void OnBuscar(ActionEvent event) {
@@ -68,7 +84,12 @@ public class Vendedor2ViewController {
     }
 
     @FXML
-    void OnInfo(ActionEvent event) {
+    void OnInfoCamisaNegra(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnInfoZapatosElegantes(ActionEvent event) {
 
     }
 
@@ -78,7 +99,12 @@ public class Vendedor2ViewController {
     }
 
     @FXML
-    void OnLabelContactos(MouseEvent event) {
+    void OnIngresarAlChat1(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnLabelContactosAndreyOchoa132(MouseEvent event) {
 
     }
 
@@ -88,44 +114,81 @@ public class Vendedor2ViewController {
     }
 
     @FXML
-    void OnLabelNumeroDeVentas(MouseEvent event) {
+    void OnLabelMeGusta1(MouseEvent event) {
 
     }
 
     @FXML
-    void OnMeGusta(ActionEvent event) {
+    void OnMeGustaCamisaNegra(ActionEvent event) {
 
     }
 
     @FXML
-    void OnProductos(ActionEvent event) {
+    void OnMeGustaZapatosNegros(ActionEvent event) {
 
     }
 
     @FXML
-    void OnVer(ActionEvent event) {
+    void OnProductosHacMath120(ActionEvent event) {
 
     }
 
     @FXML
-    void OnVerMas(ActionEvent event) {
+    void OnProductosPaulinaRubio777(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerHacMath120(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerMasComentariosCamisaNegra(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerMasZapatosNegros(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerPaulHappy(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerPaulinaRubio777(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnVerProductosAndreyOchoa132(ActionEvent event) {
 
     }
 
     @FXML
     void initialize() {
-        assert btnActualizarInfo != null : "fx:id=\"btnActualizarInfo\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
         assert btnBuscar != null : "fx:id=\"btnBuscar\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
         assert btnChat != null : "fx:id=\"btnChat\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert btnInfo != null : "fx:id=\"btnInfo\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnInfoCmisaNegra != null : "fx:id=\"btnInfoCmisaNegra\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnInfoZapatosElegantes != null : "fx:id=\"btnInfoZapatosElegantes\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
         assert btnIngresarAlChat != null : "fx:id=\"btnIngresarAlChat\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert btnMeGusta != null : "fx:id=\"btnMeGusta\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert btnProductos != null : "fx:id=\"btnProductos\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert btnVer != null : "fx:id=\"btnVer\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert btnVerMas != null : "fx:id=\"btnVerMas\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnIngresarAlChat1 != null : "fx:id=\"btnIngresarAlChat1\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnMeGustaCamisaNegra != null : "fx:id=\"btnMeGustaCamisaNegra\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnMeGustaZapatosNegros != null : "fx:id=\"btnMeGustaZapatosNegros\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnProductosHacMath120 != null : "fx:id=\"btnProductosHacMath120\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnProductosPaulinaRubio777 != null : "fx:id=\"btnProductosPaulinaRubio777\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerHacMath120 != null : "fx:id=\"btnVerHacMath120\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerMasComentariosCamisaNegra != null : "fx:id=\"btnVerMasComentariosCamisaNegra\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerMasZapatosNegros != null : "fx:id=\"btnVerMasZapatosNegros\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerPaulHappy != null : "fx:id=\"btnVerPaulHappy\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerPaulinaRubio777 != null : "fx:id=\"btnVerPaulinaRubio777\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert btnVerProductosAndreyOchoa132 != null : "fx:id=\"btnVerProductosAndreyOchoa132\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
         assert labelMeGusta != null : "fx:id=\"labelMeGusta\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert labelNumeroContactos != null : "fx:id=\"labelNumeroContactos\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
-        assert labelNumeroDeVentas != null : "fx:id=\"labelNumeroDeVentas\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert labelMeGusta1 != null : "fx:id=\"labelMeGusta1\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
+        assert labelNumeroContactosAndreyOchoa132 != null : "fx:id=\"labelNumeroContactosAndreyOchoa132\" was not injected: check your FXML file 'vendedor2-view.fxml'.";
 
     }
 

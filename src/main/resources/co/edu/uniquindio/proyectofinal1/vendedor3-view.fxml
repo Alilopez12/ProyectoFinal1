@@ -60,7 +60,7 @@
                         </ImageView>
                         <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="414.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Images/profile-pic.girl-int-sw.jpg" />
+                              <Image url="@Images/avatar2m.png" />
                            </image>
                         </ImageView>
                         <Text layoutX="512.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IsabellaTH789">
@@ -92,16 +92,6 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="49.0" fitWidth="63.0" layoutX="410.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/espada.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="318.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/escudo.png" />
-                           </image>
-                        </ImageView>
                         <ImageView fitHeight="49.0" fitWidth="69.0" layoutX="218.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/zelda%20amiibo.png" />
@@ -109,7 +99,7 @@
                         </ImageView>
                         <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="502.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Images/skyward.png" />
+                              <Image url="@Images/ocarina.png" />
                            </image>
                         </ImageView>
                         <Text layoutX="230.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="amiibo">

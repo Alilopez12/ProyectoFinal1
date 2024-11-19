@@ -96,17 +96,7 @@
                               </ImageView>
                               <ImageView fitHeight="52.0" fitWidth="60.0" layoutX="316.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@Images/camisa%20mujer.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="49.0" fitWidth="69.0" layoutX="226.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@Images/buzo.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="510.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@Images/tacones.png" />
+                                    <Image url="@Images/falda.png" />
                                  </image>
                               </ImageView>
                               <Text layoutX="220.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buzo blanco">
