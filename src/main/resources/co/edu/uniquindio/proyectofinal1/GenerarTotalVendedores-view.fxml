@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.GenerarTotalVendedoresViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#001122" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="194.0" layoutY="14.0" text="TOTAL VENDEDORES (10)" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd24d" height="326.0" layoutX="15.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="282.0" />
+      <Line endX="182.0" layoutX="115.0" layoutY="96.0" startX="-100.0" />
+      <Line endX="181.0" layoutX="115.0" layoutY="142.0" startX="-100.0" />
+      <Line endX="179.0" layoutX="115.0" layoutY="192.0" startX="-100.0" />
+      <Line endX="182.0" layoutX="115.0" layoutY="246.0" startX="-100.0" />
+      <Line endX="181.0" layoutX="115.0" layoutY="296.0" startX="-100.0" />
+      <Line endX="182.0" layoutX="115.0" layoutY="337.0" startX="-100.0" />
+      <ScrollBar layoutX="269.0" layoutY="53.0" orientation="VERTICAL" prefHeight="326.0" prefWidth="28.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd24d" height="139.0" layoutX="304.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="282.0" />
+      <Line endX="182.0" layoutX="404.0" layoutY="95.0" startX="-100.0" />
+      <Line endX="181.0" layoutX="404.0" layoutY="142.0" startX="-100.0" />
+      <Button fx:id="btnBack" layoutX="527.0" layoutY="354.0" mnemonicParsing="false" onAction="#OnBackTotalVendedores" text="Back" />
+      <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="22.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatar2m.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="22.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatarh.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="35.0" layoutX="22.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/avatar%20mujer%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/hombre%20avatar%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="19.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
