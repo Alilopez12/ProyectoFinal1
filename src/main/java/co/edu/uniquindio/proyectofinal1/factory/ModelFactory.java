@@ -202,21 +202,14 @@ public class ModelFactory implements IModelFactoryServices {
 
 
         // Crear los productos
-        Producto producto1 = Producto.builder()
-                .nombre("Smartphone")
-                .imagen("ImagenProducto1")
-                .categoria("C")
-                .precio(3500000.12)
-                .estadoProducto(EstadoProducto.PUBLICADO)
-                .build();
+        Producto producto1 = ObtencionFactory.getFactory("electrónica").crearProducto(
+                "Smartphone", "ELEC001", "imagen 1", 3500000.0, EstadoProducto.PUBLICADO);
 
-        Producto producto2 = Producto.builder()
-                .nombre("Nevera")
-                .imagen("ImagenProducto2")
-                .categoria("B")
-                .precio(34200800.50)
-                .estadoProducto(EstadoProducto.VENDIDO)
-                .build();
+        Producto producto2 = ObtencionFactory.getFactory("juego").crearProducto(
+                "Nevera", "HOG001", "imagen_nevera.jpg", 2000000.0, EstadoProducto.VENDIDO);
+
+        Producto producto3 = ObtencionFactory.getFactory("ropa").crearProducto(
+                "Camiseta Deportiva", "ROP001", "imagen_camiseta.jpg", 50000.0, EstadoProducto.CANCELADO);
 
         // Crear publicaciones
         Publicacion publicacion1 = new Publicacion(LocalDateTime.now(), 0, new ArrayList<>());
@@ -225,13 +218,10 @@ public class ModelFactory implements IModelFactoryServices {
         Publicacion publicacion2 = new Publicacion(LocalDateTime.now().minusDays(1), 5, new ArrayList<>());
         publicacion2.setProducto(producto2); // Asociar el producto a la publicación
 
-        // Crear comentarios
-        Comentario comentario1 = new Comentario("¡Me interesa el producto!", publicacion1, vendedor1);
-        Comentario comentario2 = new Comentario("¿Está disponible aún?", publicacion2, vendedor2);
 
         // Agregar comentarios a los vendedores
-        vendedor1.agregarComentario(comentario1);
-        vendedor2.agregarComentario(comentario2);
+        vendedor1.agregarComentario("ayyy oye me interesa ese cel", publicacion1.getProducto(), vendedor1);
+        vendedor1.agregarComentario("Ese producto esta disponible? Me avisass", publicacion2.getProducto(), vendedor2);
 
         // Agregar los usuarios al marketplace
         marketPlace1.getListUsuarios().add(administrador);

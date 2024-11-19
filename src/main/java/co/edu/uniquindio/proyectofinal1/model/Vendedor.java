@@ -43,18 +43,29 @@ public class Vendedor extends Usuario{
         return comentarios;
     }
 
-    public void agregarComentario(Comentario comentario) {
-        if (comentario == null || comentario.getPublicacion() == null) {
-            throw new IllegalArgumentException("El comentario o su publicación no pueden ser nulos.");
+    public boolean agregarComentario(String comentarioTexto, Producto producto, Vendedor vendedorQueComenta) {
+
+        if (producto.getEstadoProducto() != EstadoProducto.PUBLICADO) {
+            System.out.println("El producto no está en estado PUBLICADO.");
+            return false;
         }
 
-        // valida publicación pertenece al vendedor
-        if (!this.listaProductos.contains(comentario.getPublicacion().getProducto())) {
-            System.out.println("El comentario no está asociado a un producto del vendedor.");
-            return;
+        if (!this.contactos.contains(vendedorQueComenta)) {
+            System.out.println("No tienes permiso para comentar en este producto.");
+            return false;
         }
-        this.comentarios.add(comentario);
-        notificarNuevoComentario(comentario);
+
+        Publicacion publicacion = producto.getListPublicaciones().stream().findFirst().orElse(null);
+        if (publicacion == null) {
+            System.out.println("El producto no tiene una publicación asociada.");
+            return false;
+        }
+
+        Comentario comentario = new Comentario(comentarioTexto, publicacion, vendedorQueComenta);
+        publicacion.getListComentarios().add(comentario);
+
+        System.out.println("Comentario agregado exitosamente.");
+        return true;
     }
 
     private void notificarNuevoComentario(Comentario comentario) {
