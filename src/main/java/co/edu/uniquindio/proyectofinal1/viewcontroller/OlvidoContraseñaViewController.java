@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 public class OlvidoContraseñaViewController {
@@ -27,6 +28,11 @@ public class OlvidoContraseñaViewController {
 
     @FXML
     void OnEnviar(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Envío Exitoso");
+        alert.setHeaderText(null);
+        alert.setContentText("El correo se envió con éxito.");
+        alert.showAndWait();
 
     }
 
