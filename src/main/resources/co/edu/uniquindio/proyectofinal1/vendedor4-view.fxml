@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor4ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor4ViewController">
    <children>
       <AnchorPane layoutY="-4.0" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -76,7 +76,7 @@
                               <Button fx:id="btnVerHacMath120" layoutX="223.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerHacMath120" text="Ver" />
                               <Button fx:id="btnVerAndreyOchoa132" layoutX="374.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerAndreyOchoa132" text="Ver" />
                               <Button fx:id="btnVerPaulinaRubio777" layoutX="519.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerPaulinaRubio777" text="Ver" />
-                              <Text layoutX="211.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:">
+                              <Text layoutX="211.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos:">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -133,7 +133,7 @@
                               <Button fx:id="btnIngresarAlChat" layoutX="93.0" layoutY="312.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
                               <ImageView fitHeight="31.0" fitWidth="47.0" layoutX="201.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
+                                    <Image url="@Images/fotos-de-perfil-qRIot.jpg" />
                                  </image>
                               </ImageView>
                               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="122.0" layoutX="307.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
@@ -151,7 +151,7 @@
                               <Text layoutX="299.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
                               <ImageView fitHeight="31.0" fitWidth="47.0" layoutX="466.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
+                                    <Image url="@Images/fotos-de-perfil-qRIot.jpg" />
                                  </image>
                               </ImageView>
                               <Button fx:id="btnIngresarAlChat1" layoutX="356.0" layoutY="316.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
@@ -178,8 +178,6 @@
                               <Circle fill="#173e63" layoutX="241.0" layoutY="133.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                               <Line endX="241.0" layoutX="302.0" layoutY="156.0" startX="-100.0" />
                               <Line endX="247.0" endY="1.52587890625E-5" layoutX="296.0" layoutY="238.0" startX="-96.0" startY="1.52587890625E-5" />
-                              <Button fx:id="btnProductosHacMath120" layoutX="374.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnProductosHacMath120" text="Productos" />
-                              <Button fx:id="btnProductosYandereSim" layoutX="374.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnProductosYandereSim" text="Productos" />
                               <Button fx:id="btnChatHacMath120" layoutX="478.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnChatHacMath120" text="Chat" />
                               <Button fx:id="btnChatYandereSim" layoutX="477.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnChatYandereSim" text="Chat" />
                               <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="213.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
@@ -194,13 +192,11 @@
                                     <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
                                  </image>
                               </ImageView>
-                              <Text fill="#fff2f2" layoutX="50.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120" textAlignment="CENTER">
+                              <Text fill="#fff2f2" layoutX="50.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulHappy" textAlignment="CENTER">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
                               </Text>
-                              <Text fill="#fffefe" layoutX="55.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:" />
-                              <Button fx:id="btnVerProductosHacMath120" layoutX="77.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnVerProductosHacMath120" text="Ver" />
                               <ImageView fitHeight="120.0" fitWidth="133.0" layoutX="33.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@Images/fotos-de-perfil-qRIot.jpg" />

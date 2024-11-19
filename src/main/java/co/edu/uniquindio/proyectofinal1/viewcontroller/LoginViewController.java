@@ -92,7 +92,7 @@ public class LoginViewController {
                 break;
 
             case "VENDEDOR":
-                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("perfilusuario-view.fxml"));
+                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("vendedor1-view.fxml"));
                 break;
 
             default:
