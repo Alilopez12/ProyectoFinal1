@@ -9,7 +9,7 @@ public class ObtencionFactory {
         switch (categoria.toLowerCase()) {
             case "electrónica":
                 return new ElectronicaFactory();
-            case "hogar":
+            case "juego":
                 return new JuegoFactory();
             case "ropa":
                 return new RopaFactory();

@@ -1,12 +1,18 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class IngresarViewController {
 
@@ -51,7 +57,13 @@ public class IngresarViewController {
     }
 
     @FXML
-    void Onback(ActionEvent event) {
+    void Onback(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("login-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
 
     }
 

@@ -33,8 +33,8 @@ public class InterfazReporteViewController {
 
         if (directorioSeleccionado != null) {
             String ruta = directorioSeleccionado.getAbsolutePath();
-            String titulo = "Reporte de Listado de Clientes";
-            String usuario = "AndresOchoa123";
+            String titulo = "Reporte de Estadisticas Generales";
+            String usuario = "Alicia la Admin";
             String contenido = "Contenido del reporte con estadísticas, etc.";
             String fechaExportacion = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
             String nombreArchivo = "Reporte_" + titulo.replace(" ", "_") + ".txt";
