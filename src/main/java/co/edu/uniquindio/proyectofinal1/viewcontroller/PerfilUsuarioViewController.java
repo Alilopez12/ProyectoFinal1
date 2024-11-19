@@ -32,8 +32,8 @@ public class PerfilUsuarioViewController {
 
     @FXML
     void initialize() {
-        assert btnActualizarInformacion != null : "fx:id=\"btnActualizarInformacion\" was not injected: check your FXML file 'perfilusuario.fxml'.";
-        assert btnBuscarContacto != null : "fx:id=\"btnBuscarContacto\" was not injected: check your FXML file 'perfilusuario.fxml'.";
+        assert btnActualizarInformacion != null : "fx:id=\"btnActualizarInformacion\" was not injected: check your FXML file 'perfilusuario-view.fxml'.";
+        assert btnBuscarContacto != null : "fx:id=\"btnBuscarContacto\" was not injected: check your FXML file 'perfilusuario-view.fxml'.";
 
     }
 

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +15,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.InterfazReporteViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.InterfazReporteViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3032" height="406.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#001f3c" height="27.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
@@ -29,58 +35,40 @@
             <Font name="DejaVu Sans Mono" size="24.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e1" height="285.0" layoutX="197.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" width="389.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e0e1" height="285.0" layoutX="198.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="389.0" />
       <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="542.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/Archivo-dtu-exit-fast.PNG" />
          </image>
       </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="205.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/edit-icon.PNG" />
-         </image>
-      </ImageView>
       <Line endX="286.0" layoutX="300.0" layoutY="140.0" startX="-100.0" />
-      <Label layoutX="270.0" layoutY="103.0" prefHeight="30.0" prefWidth="250.0" text="Reporte de listado de Clientes">
+      <Label layoutX="257.0" layoutY="106.0" prefHeight="30.0" prefWidth="250.0" text="Reporte de Estadisticas Generales">
          <font>
             <Font name="Harlow Solid Italic" size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="205.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/edit-icon.PNG" />
-         </image>
-      </ImageView>
-      <Label layoutX="492.0" layoutY="148.0" text="20 julio, 2024">
+      <Label layoutX="492.0" layoutY="148.0" text="22 nov, 2024">
          <font>
             <Font name="Felix Titling" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="216.0" layoutY="195.0" prefHeight="17.0" prefWidth="352.0" text="Este reporte se centra en la situacion de los Clientes actuales...">
-         <font>
-            <Font name="Lucida Calligraphy Italic" size="10.0" />
-         </font>
-      </Label>
-      <Label layoutX="217.0" layoutY="215.0" prefHeight="19.0" prefWidth="358.0" text="Se enviará los problemas e información referente a esto.">
-         <font>
-            <Font name="Lucida Calligraphy Italic" size="10.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="392.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="393.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/exporar-icon%7D.PNG" />
          </image>
       </ImageView>
-      <Button fx:id="btnExportar" layoutX="431.0" layoutY="293.0" mnemonicParsing="false" onAction="#OnExportarReporte" text="Exportar">
+      <Button fx:id="btnExportar" layoutX="431.0" layoutY="206.0" mnemonicParsing="false" onAction="#OnExportarReporte" text="Exportar">
          <font>
             <Font name="High Tower Text" size="12.0" />
          </font>
       </Button>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="118.0" layoutX="216.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
-      <ImageView fitHeight="97.0" fitWidth="130.0" layoutX="254.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="118.0" layoutX="218.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+      <ImageView fitHeight="97.0" fitWidth="130.0" layoutX="256.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/pdf-icon.PNG" />
          </image>
       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0b0b12" height="62.0" layoutX="197.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="389.0" />
+      <Button fx:id="btnBack" layoutX="528.0" layoutY="339.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

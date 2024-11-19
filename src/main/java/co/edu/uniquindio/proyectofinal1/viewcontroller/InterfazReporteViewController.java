@@ -7,10 +7,15 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.ResourceBundle;
+
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 
 
 public class InterfazReporteViewController {
@@ -56,6 +61,22 @@ public class InterfazReporteViewController {
         } else {
             System.out.println("No se seleccionó ningún directorio. Porfavor elija uno");
         }
+    }
+
+
+    @FXML
+    private Button btnBack;
+
+    @FXML
+    void onBack(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("estadisticas-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
+
     }
 
     @FXML
