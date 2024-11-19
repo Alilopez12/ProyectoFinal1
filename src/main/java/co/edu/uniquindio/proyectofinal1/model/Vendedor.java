@@ -23,7 +23,7 @@ public class Vendedor extends Usuario{
         this.listaChats = listaChats;
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
-        this.contactos = new ArrayList<>();
+        this.contactos = contactos;
     }
 
     public String agregarContacto(Vendedor contacto) {

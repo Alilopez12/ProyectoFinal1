@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor2ViewController">
+   <children>
+      <TabPane layoutY="-4.0" prefHeight="408.0" prefWidth="614.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Perfil vendedor2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="52.0" stroke="BLACK" strokeType="INSIDE" width="614.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e2edf7" height="320.0" layoutX="-4.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="625.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#32597e" height="25.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="614.0" />
+                        <ImageView fitHeight="108.0" fitWidth="163.0" layoutX="41.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatarh.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="49.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AndreyOchoa132" />
+                        <Text layoutX="59.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDOR" textAlignment="CENTER" wrappingWidth="71.73675537109375" />
+                        <Text layoutX="49.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contactos:" />
+                        <Text layoutX="46.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de ventas:" />
+                        <Button fx:id="btnActualizarInfo" layoutX="27.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnActualizarInformación" text="Actualizar información" />
+                        <Text layoutX="195.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="317.0" layoutY="107.0" prefHeight="26.0" prefWidth="176.0" text="Ingrese el nombre del usuario" />
+                        <Button fx:id="btnBuscar" layoutX="523.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnBuscar" text="Buscar" />
+                        <ImageView fitHeight="64.0" fitWidth="106.0" layoutX="312.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatar%20mujer%202.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="414.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatar2m.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.0" fitWidth="91.0" layoutX="213.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/hombre%20avatar%201.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="102.0" layoutX="511.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="313.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IsabellaTH789">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="406.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulinaRubio777" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="520.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="208.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MarioAndres98">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnVer" layoutX="224.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Button fx:id="btnVer" layoutX="532.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Button fx:id="btnVer" layoutX="327.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Button fx:id="btnVer" layoutX="428.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Text layoutX="195.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="321.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/billetera.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="93.0" layoutX="209.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/botas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="421.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/camisa%20negra.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="522.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/zapatos.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="220.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Botas café">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="328.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billetera ">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="419.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camisa negra">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="511.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zapatos elegantes">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnInfo" layoutX="223.0" layoutY="343.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
+                        <Button fx:id="btnInfo" layoutX="328.0" layoutY="344.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
+                        <Button fx:id="btnInfo" layoutX="430.0" layoutY="343.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
+                        <Button fx:id="btnInfo" layoutX="534.0" layoutY="343.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
+                        <Label fx:id="labelNumeroContactos" layoutX="118.0" layoutY="277.0" onDragDetected="#OnLabelContactos" prefHeight="18.0" prefWidth="25.0" />
+                        <Label fx:id="labelNumeroDeVentas" layoutX="151.0" layoutY="304.0" onDragDetected="#OnLabelNumeroDeVentas" prefHeight="18.0" prefWidth="22.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Muro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="379.0" prefWidth="1021.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="51.0" stroke="BLACK" strokeType="INSIDE" width="614.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737978" height="318.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="645.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="278.0" layoutX="17.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="239.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="123.0" layoutX="279.0" layoutY="223.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="127.0" layoutX="434.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="130.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="279.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="122.0" layoutX="435.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+                        <ScrollBar layoutX="583.0" layoutY="95.0" orientation="VERTICAL" prefHeight="242.0" prefWidth="22.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="123.0" layoutX="31.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                        <ImageView fitHeight="89.0" fitWidth="79.0" layoutX="46.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/camisa%20negra.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="91.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
+                        <Text layoutX="31.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Camisa negra" />
+                        <Text layoutX="147.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
+                        <Button fx:id="btnVerMas" layoutX="148.0" layoutY="192.0" mnemonicParsing="false" onAction="#OnVerMas" text="Ver más" />
+                        <Button fx:id="btnMeGusta" layoutX="146.0" layoutY="236.0" mnemonicParsing="false" onAction="#OnMeGusta" text="Me gusta" />
+                        <Label fx:id="labelMeGusta" layoutX="217.0" layoutY="240.0" onDragDetected="#OnLabelMeGusta" prefHeight="18.0" prefWidth="26.0" />
+                        <Text layoutX="31.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: AndreyOchoa132" />
+                        <Button fx:id="btnIngresarAlChat" layoutX="87.0" layoutY="319.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
+                        <ImageView fitHeight="34.0" fitWidth="33.0" layoutX="210.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatarh.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="122.0" layoutX="286.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/botas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="76.0" fitWidth="103.0" layoutX="461.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/billetera.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="84.0" fitWidth="108.0" layoutX="458.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/zapatos.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="321.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Botas café">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="460.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zapatos elegantes">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="482.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billetera">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="310.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/correa.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="311.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinturón café">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="379.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/meGusta.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="380.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/meGusta.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="532.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/meGusta.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="535.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/meGusta.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Contactos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="59.0" stroke="BLACK" strokeType="INSIDE" width="614.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737978" height="311.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="614.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9e3ec" height="238.0" layoutX="218.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="361.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#173e63" height="24.0" layoutX="218.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="360.0" />
+                        <ImageView fitHeight="109.0" fitWidth="132.0" layoutX="48.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatarh.png" />
+                           </image>
+                        </ImageView>
+                        <ScrollBar layoutX="218.0" layoutY="321.0" prefHeight="18.0" prefWidth="359.0" />
+                        <ScrollBar layoutX="558.0" layoutY="125.0" orientation="VERTICAL" prefHeight="198.0" prefWidth="20.0" />
+                        <Text fill="WHITE" layoutX="41.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AndreyOchoa132" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="60.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:" />
+                        <Button fx:id="btnVer" layoutX="81.0" layoutY="244.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Line endX="239.0" layoutX="319.0" layoutY="195.0" startX="-100.0" />
+                        <Line endX="237.0" layoutX="319.0" layoutY="266.0" startX="-100.0" />
+                        <Text layoutX="283.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACTOS">
+                           <font>
+                              <Font name="Monotype Corsiva" size="43.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="#173e63" layoutX="531.0" layoutY="161.0" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#173e63" layoutX="255.0" layoutY="161.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="231.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/avatar%20mujer%202.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="57.0" layoutX="230.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="303.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IsabellaTH789">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="307.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnProductos" layoutX="416.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnProductos" text="Productos" />
+                        <Button fx:id="btnProductos" layoutX="418.0" layoutY="282.0" mnemonicParsing="false" onAction="#OnProductos" text="Productos" />
+                        <Button fx:id="btnChat" layoutX="507.0" layoutY="219.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
+                        <Button fx:id="btnChat" layoutX="507.0" layoutY="282.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

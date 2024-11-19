@@ -18,13 +18,22 @@ public class PerfilUsuarioViewController {
     private Button btnActualizarInformacion;
 
     @FXML
+    private Button btnBuscarContacto;
+
+    @FXML
     void OnActualizarInformacion(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnBuscarContacto(ActionEvent event) {
 
     }
 
     @FXML
     void initialize() {
         assert btnActualizarInformacion != null : "fx:id=\"btnActualizarInformacion\" was not injected: check your FXML file 'perfilusuario.fxml'.";
+        assert btnBuscarContacto != null : "fx:id=\"btnBuscarContacto\" was not injected: check your FXML file 'perfilusuario.fxml'.";
 
     }
 
