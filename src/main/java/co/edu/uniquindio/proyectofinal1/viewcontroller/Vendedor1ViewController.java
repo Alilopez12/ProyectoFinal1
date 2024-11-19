@@ -41,7 +41,7 @@ public class Vendedor1ViewController {
     private Button btnMeGustaAudifonos;
 
     @FXML
-    private Button btnMeGustaSmarphone;
+    private Button btnMeGustaComentariosSmarphone;
 
     @FXML
     private Button btnProductosAndreyOchoa132;
@@ -134,7 +134,7 @@ public class Vendedor1ViewController {
     }
 
     @FXML
-    void OnVerMasComentariosAudifonos(ActionEvent event) {
+    void OnVerMas(ActionEvent event) {
 
     }
 
@@ -168,7 +168,7 @@ public class Vendedor1ViewController {
         assert btnIngresarChat != null : "fx:id=\"btnIngresarChat\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
         assert btnIngresarChat1 != null : "fx:id=\"btnIngresarChat1\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
         assert btnMeGustaAudifonos != null : "fx:id=\"btnMeGustaAudifonos\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnMeGustaSmarphone != null : "fx:id=\"btnMeGustaSmarphone\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
+        assert btnMeGustaComentariosSmarphone != null : "fx:id=\"btnMeGustaComentariosSmarphone\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
         assert btnProductosAndreyOchoa132 != null : "fx:id=\"btnProductosAndreyOchoa132\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
         assert btnVerAndreyOchoa132 != null : "fx:id=\"btnVerAndreyOchoa132\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
         assert btnVerHacMath120 != null : "fx:id=\"btnVerHacMath120\" was not injected: check your FXML file 'vendedor1-view.fxml'.";

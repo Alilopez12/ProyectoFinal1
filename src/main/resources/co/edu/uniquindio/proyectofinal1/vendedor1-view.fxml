@@ -9,6 +9,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
@@ -212,6 +213,15 @@
                         <Button fx:id="btnChatAndreyOchoa132" layoutX="513.0" layoutY="208.0" mnemonicParsing="false" onAction="#OnChatAndreyOchoa132" text="Chat" />
                         <Button fx:id="OnProductosAlbertoDiazC" layoutX="423.0" layoutY="280.0" mnemonicParsing="false" onAction="#OnProductosAlbertoDiazC" text="Productos" />
                         <Button fx:id="btnChatAlbertoDiazC" layoutX="512.0" layoutY="280.0" mnemonicParsing="false" onAction="#OnChatAlbertoDiazC" text="Chat" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="154.0" layoutY="112.0" prefHeight="100.0" prefWidth="200.0" />
                      </children>
                   </AnchorPane>
               </content>
