@@ -29,6 +29,9 @@ public class ModelFactory implements IModelFactoryServices {
     }
 
     public MarketPlace getMarketPlace() {
+        if (marketPlace == null) {
+            marketPlace = inicializarDatos();
+        }
         return marketPlace;
     }
 
