@@ -67,6 +67,8 @@ public class ModelFactory implements IModelFactoryServices {
 
         MarketPlace marketPlace1 = new MarketPlace();
 
+        //CREACIÓN DE USUARIOS
+
         Usuario administrador = Administrador.builder()
                 .nombre("Alicia")
                 .apellidos("Montes Ceballos")
@@ -91,21 +93,16 @@ public class ModelFactory implements IModelFactoryServices {
                 .contraseña("Kiyh341Q=?")
                 .build();
 
-        Producto producto1 = Producto.builder()
-                .nombre("Smartphone")
-                .imagen("ImagenProducto1")
-                .categoria("C")
-                .precio(3500000.12)
-                .estadoProducto(EstadoProducto.PUBLICADO)
-                .build();
+        // CREACIÓN DE PRODUCTOS
 
-        Producto producto2 = Producto.builder()
-                .nombre("Nevera")
-                .imagen("ImagenProducto2")
-                .categoria("B")
-                .precio(34200800.50)
-                .estadoProducto(EstadoProducto.VENDIDO)
-                .build();
+        Producto producto1 = ObtencionFactory.getFactory("electrónica").crearProducto(
+                "Smartphone", "E01P", "imagen1", 3500000.0, EstadoProducto.PUBLICADO);
+
+        Producto producto2 = ObtencionFactory.getFactory("juego").crearProducto(
+                "Juego Zelda", "HBN3", "imagen2", 2000000.0, EstadoProducto.VENDIDO);
+
+        Producto producto3 = ObtencionFactory.getFactory("ropa").crearProducto(
+                "Camiseta Deportiva", "OP23", "Imagen3", 50000.0, EstadoProducto.CANCELADO);
 
 
 

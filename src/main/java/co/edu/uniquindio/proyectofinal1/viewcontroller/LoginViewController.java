@@ -1,5 +1,6 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
 import co.edu.uniquindio.proyectofinal1.model.AutenticacionProxy;
 import co.edu.uniquindio.proyectofinal1.service.IAutenticacion;
 import javafx.event.ActionEvent;
@@ -41,12 +42,8 @@ public class LoginViewController {
         if (autenticacionProxy.autenticar(usuario, contrasena)) {
             System.out.println("Usuario autenticado exitosamente.");
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/proyectofinal1/view/main-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-            Stage stage = (Stage) btnEnter.getScene().getWindow();
-            stage.setScene(scene);
-            stage.setTitle("Pantalla Principal");
-            stage.show();
+            String rol = autenticacionProxy.obtenerRolUsuario(usuario);
+            cargarInterfazPorRol(rol);
 
         } else {
             Alert alert = new Alert(AlertType.ERROR);
@@ -58,12 +55,55 @@ public class LoginViewController {
     }
 
     @FXML
+    void OnSignin(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("ingresar-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    void onForgotPassword(ActionEvent event) {
+        System.out.println("Olvido su contraseña");
+    }
+
+
+    @FXML
     void initialize() {
         assert btnEnter != null : "fx:id=\"btnEnter\" was not injected: check your FXML file 'login-view.fxml'.";
         assert btnSignIn != null : "fx:id=\"btnSignIn\" was not injected: check your FXML file 'login-view.fxml'.";
         assert txtForgotPassword != null : "fx:id=\"txtForgotPassword\" was not injected: check your FXML file 'login-view.fxml'.";
         assert txtIngresarContrasena != null : "fx:id=\"txtIngresarContrasena\" was not injected: check your FXML file 'login-view.fxml'.";
         assert txtIngresarUsuario != null : "fx:id=\"txtIngresarUsuario\" was not injected: check your FXML file 'login-view.fxml'.";
+    }
+
+    // Método para cargar la interfaz según el rol
+    private void cargarInterfazPorRol(String rol) throws IOException {
+        FXMLLoader fxmlLoader;
+        Stage stage = (Stage) btnEnter.getScene().getWindow();
+
+        switch (rol) {
+            case "ADMIN":
+                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("estadisticas-view.fxml"));
+                break;
+
+            case "VENDEDOR":
+                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("perfilusuario.fxml"));
+                break;
+
+            default:
+                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("login-view.fxml"));
+                break;
+        }
+
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setScene(scene);
+        stage.setTitle("Pantalla Principal");
+        stage.show();
     }
 
 }

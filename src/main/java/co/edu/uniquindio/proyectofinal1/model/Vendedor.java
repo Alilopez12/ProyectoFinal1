@@ -25,8 +25,6 @@ public class Vendedor extends Usuario{
         this.contactos = contactos;
     }
 
-
-
     public Collection<Producto> getListaProductos() {
         return listaProductos;
     }
@@ -69,6 +67,31 @@ public class Vendedor extends Usuario{
 
     public static VendedorBuilder builder() {
         return new VendedorBuilder();
+    }
+
+    public boolean agregarComentario(String comentarioTexto, Producto producto, Vendedor vendedorQueComenta) {
+
+        if (producto.getEstadoProducto() != EstadoProducto.PUBLICADO) {
+            System.out.println("El producto no está en estado PUBLICADO.");
+            return false;
+        }
+
+        if (!this.contactos.contains(vendedorQueComenta)) {
+            System.out.println("No tienes permiso para comentar en este producto.");
+            return false;
+        }
+
+        Publicacion publicacion = producto.getListPublicaciones().stream().findFirst().orElse(null);
+        if (publicacion == null) {
+            System.out.println("El producto no tiene una publicación asociada.");
+            return false;
+        }
+
+        Comentario comentario = new Comentario(comentarioTexto, publicacion);
+        publicacion.getListComentarios().add(comentario);
+
+        System.out.println("Comentario agregado exitosamente.");
+        return true;
     }
 
     @Override
