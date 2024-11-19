@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+
 public class EstadisticasViewController {
 
     @FXML
@@ -22,33 +23,41 @@ public class EstadisticasViewController {
     private URL location;
 
     @FXML
-    private Button btnExportarEstadisticas;
-
-    @FXML
-    private Button btnGenerar;
-
-    @FXML
-    private Button btnGenerar1;
-
-    @FXML
-    private Button btnGenerar2;
-
-    @FXML
-    private Button btnNotificaciones;
-
-    @FXML
-    private TextField txtProductos;
-
-    @FXML
-    private TextField txtTransacciones;
+    private Button btnGenerarVendedores;
 
     @FXML
     private TextField txtVendedores;
 
     @FXML
+    private TextField txtProductos;
+
+    @FXML
+    private Button btnGenerarProductos;
+
+    @FXML
+    private Button btnExportarEstadisticas;
+
+
+    @FXML
     void OnExportarEstadisticas(ActionEvent event) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("interfazReporte-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("reporte");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+    @FXML
+    void onGenerarVendedores(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onGenerarProductos(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("totalProductos-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Registro");
@@ -59,30 +68,13 @@ public class EstadisticasViewController {
 
 
     @FXML
-    void OnGenerarVendedores(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnGenerarProductos(ActionEvent event) {
-
-    }
-    @FXML
-    void OnNotificaciones(ActionEvent event) {
-
-    }
-
-    @FXML
     void initialize() {
-        assert btnExportarEstadisticas != null : "fx:id=\"btnExportarEstadisticas\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert btnGenerar != null : "fx:id=\"btnGenerar\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert btnGenerar1 != null : "fx:id=\"btnGenerar1\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert btnGenerar2 != null : "fx:id=\"btnGenerar2\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert btnNotificaciones != null : "fx:id=\"btnNotificaciones\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert txtProductos != null : "fx:id=\"txtProductos\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
-        assert txtTransacciones != null : "fx:id=\"txtTransacciones\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
+        assert btnGenerarVendedores != null : "fx:id=\"btnGenerarVendedores\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
         assert txtVendedores != null : "fx:id=\"txtVendedores\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
+        assert txtProductos != null : "fx:id=\"txtProductos\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
+        assert btnGenerarProductos != null : "fx:id=\"btnGenerarProductos\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
+        assert btnExportarEstadisticas != null : "fx:id=\"btnExportarEstadisticas\" was not injected: check your FXML file 'estadisticas-view.fxml'.";
 
     }
-
 }
+
