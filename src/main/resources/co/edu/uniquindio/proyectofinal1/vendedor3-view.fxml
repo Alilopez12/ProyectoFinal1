@@ -26,16 +26,14 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="48.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e2edf7" height="317.0" layoutY="58.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#32597e" height="20.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
-                        <ImageView fitHeight="115.0" fitWidth="156.0" layoutX="20.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="115.0" fitWidth="156.0" layoutX="20.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
                            </image>
                         </ImageView>
-                        <Text layoutX="67.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDOR" />
-                        <Text layoutX="20.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número contactos:" />
-                        <Text layoutX="20.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número ventas:" />
-                        <Button fx:id="btnActualizarInformacion" layoutX="30.0" layoutY="317.0" mnemonicParsing="false" onAction="#OnActualizarInformacion" text="Actualizar información" />
-                        <Text layoutX="20.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120" />
+                        <Text layoutX="67.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDOR" />
+                        <Text layoutX="20.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número contactos:" />
+                        <Text layoutX="20.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120" />
                         <Text layoutX="212.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias:">
                            <font>
                               <Font size="16.0" />
@@ -43,91 +41,67 @@
                         </Text>
                         <TextField layoutX="315.0" layoutY="92.0" prefHeight="26.0" prefWidth="174.0" text="Ingrese el nombre del usuario" />
                         <Button fx:id="btnBuscar" layoutX="517.0" layoutY="91.0" mnemonicParsing="false" onAction="#OnBuscar" text="Buscar" />
-                        <ImageView fitHeight="55.0" fitWidth="62.0" layoutX="214.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="55.0" fitWidth="62.0" layoutX="250.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/fotos-de-perfil-qRIot.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="55.0" fitWidth="54.0" layoutX="318.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="494.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Images/hombre%20avatar%201.png" />
+                              <Image url="@Images/avatarh.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="53.0" fitWidth="56.0" layoutX="513.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/avatar%20mujer%202.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="414.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="371.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/avatar2m.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="512.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IsabellaTH789">
+                        <Text layoutX="482.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AndreyOchoa132">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="309.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MarioAndres98">
+                        <Text layoutX="249.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulHappy">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="216.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulHappy">
+                        <Text layoutX="362.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulinaRubio777">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="416.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YandereSim">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <Button fx:id="btnVer" layoutX="223.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
-                        <Button fx:id="btnVer" layoutX="426.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
-                        <Button fx:id="btnVer" layoutX="326.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
-                        <Button fx:id="btnVer" layoutX="524.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Button fx:id="btnVerPaulHappy" layoutX="258.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerPaulHappy" text="Ver" />
+                        <Button fx:id="btnVerPaulinaRubio777" layoutX="381.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnVerPaulinaRubio777" text="Ver" />
+                        <Button fx:id="btnVerAndreyOchoa132" layoutX="504.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerAndreyOchoa132" text="Ver" />
                         <Text layoutX="211.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="49.0" fitWidth="69.0" layoutX="218.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="49.0" fitWidth="69.0" layoutX="318.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/zelda%20amiibo.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="502.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="429.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/ocarina.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="230.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="amiibo">
+                        <Text layoutX="332.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="amiibo">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="326.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escudo">
+                        <Text layoutX="448.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ocarina">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="421.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espada">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="512.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juego zelda">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <Button fx:id="btnInfo" layoutX="419.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
-                        <Button fx:id="btnInfo" layoutX="228.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
-                        <Button fx:id="btnInfo" layoutX="325.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
-                        <Button fx:id="btnInfo" layoutX="522.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
-                        <Label fx:id="labelNumeroContactos" layoutX="129.0" layoutY="263.0" onDragDetected="#OnLabelNumeroContactos" prefHeight="18.0" prefWidth="26.0" />
-                        <Label fx:id="labelNumeroVentas" layoutX="108.0" layoutY="291.0" onDragDetected="#OnlabelNumeroVentas" prefHeight="18.0" prefWidth="28.0" />
+                        <Button fx:id="btnInfoAmiibo" layoutX="327.0" layoutY="327.0" mnemonicParsing="false" onAction="#OnInfoAmiibo" text="info" />
+                        <Button fx:id="btnInfoOcarina" layoutX="447.0" layoutY="327.0" mnemonicParsing="false" onAction="#OnInfoOcarina" text="info" />
+                        <Label fx:id="labelNumeroContactosHacMath120" layoutX="129.0" layoutY="304.0" onDragDetected="#OnLabelNumeroContactosHacMath120" prefHeight="18.0" prefWidth="26.0" />
                      </children>
                   </AnchorPane>
             </content>
@@ -139,10 +113,7 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273331" height="51.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737978" height="311.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="264.0" layoutX="28.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="239.0" />
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="124.0" layoutX="430.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="124.0" />
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="124.0" layoutX="290.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="290.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="124.0" layoutX="430.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="122.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="265.0" layoutX="312.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
                         <ScrollBar layoutX="566.0" layoutY="94.0" orientation="VERTICAL" prefHeight="254.0" prefWidth="22.0" />
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="122.0" layoutX="40.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
                         <Text layoutX="97.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
@@ -152,10 +123,10 @@
                               <Image url="@Images/ocarina.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="163.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios" />
-                        <Button fx:id="btnVerMas" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onAction="#OnVerMas" text="Ver más" />
-                        <Button fx:id="btnMeGusta" layoutX="163.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnMeGusta" text="Me gusta" />
-                        <Label fx:id="labelMeGusta" layoutX="234.0" layoutY="233.0" onDragDetected="#OnMeGusta" prefHeight="18.0" prefWidth="26.0" />
+                        <Text layoutX="163.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
+                        <Button fx:id="btnVerMasComentariosOcarina" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onAction="#OnVerMasComentariosOcarina" text="Ver más" />
+                        <Button fx:id="btnMeGustaOcarina" layoutX="163.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnMeGustaOcarina" text="Me gusta" />
+                        <Label fx:id="labelMeGustaOcarina" layoutX="234.0" layoutY="233.0" onDragDetected="#OnMeGustaOcarina" prefHeight="18.0" prefWidth="26.0" />
                         <Text layoutX="43.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
                         <Button fx:id="btnIngresarAlChat" layoutX="93.0" layoutY="312.0" mnemonicParsing="false" onAction="#OnIngresarChat" text="Ingresar al chat" />
                         <ImageView fitHeight="31.0" fitWidth="47.0" layoutX="201.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
@@ -163,66 +134,30 @@
                               <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="62.0" fitWidth="89.0" layoutX="304.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/skyward.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="87.0" fitWidth="89.0" layoutX="446.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7394b4" height="122.0" layoutX="327.0" layoutY="153.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+                        <ImageView fitHeight="87.0" fitWidth="89.0" layoutX="338.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/zelda%20amiibo.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="76.0" fitWidth="90.0" layoutX="307.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/espada.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="80.0" fitWidth="79.0" layoutX="453.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/escudo.png" />
-                           </image>
-                        </ImageView>
-                        <Text layoutX="323.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juego zelda">
+                        <Text layoutX="367.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amiibo">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Text layoutX="477.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amiibo">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="338.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espada">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="474.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escudo">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="379.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                        <Text layoutX="381.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #2" />
+                        <Text layoutX="326.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Amiibo" />
+                        <Text layoutX="448.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
+                        <Button fx:id="btnVerMasComentariosAmiibo" layoutX="446.0" layoutY="178.0" mnemonicParsing="false" onAction="#OnVerMasComentariosAmiibo" text="Ver más" />
+                        <Button fx:id="btnMeGustaAmiibo" layoutX="444.0" layoutY="227.0" mnemonicParsing="false" onAction="#OnMeGustaAmiibo" text="Me gusta" />
+                        <Label fx:id="labelMeGustaAmiibo" layoutX="514.0" layoutY="230.0" onDragDetected="#OnMeGustaAmiibo" prefHeight="18.0" prefWidth="26.0" />
+                        <Text layoutX="327.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
+                        <ImageView fitHeight="31.0" fitWidth="47.0" layoutX="493.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Images/meGusta.png" />
+                              <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="20.0" fitWidth="16.0" layoutX="525.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/meGusta.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="17.0" fitWidth="33.0" layoutX="388.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/meGusta.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="527.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Images/meGusta.png" />
-                           </image>
-                        </ImageView>
+                        <Button fx:id="btnIngresarAlChat" layoutX="380.0" layoutY="314.0" mnemonicParsing="false" onAction="#OnIngresarChat" text="Ingresar al chat" />
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -245,10 +180,10 @@
                         <Circle fill="#173e63" layoutX="241.0" layoutY="133.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                         <Line endX="241.0" layoutX="302.0" layoutY="156.0" startX="-100.0" />
                         <Line endX="247.0" endY="1.52587890625E-5" layoutX="296.0" layoutY="238.0" startX="-96.0" startY="1.52587890625E-5" />
-                        <Button fx:id="btnProductos" layoutX="374.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnProductos" text="Productos" />
-                        <Button fx:id="btnProductos" layoutX="374.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnProductos" text="Productos" />
-                        <Button fx:id="btnChat" layoutX="478.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
-                        <Button fx:id="btnChat" layoutX="477.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
+                        <Button fx:id="btnProductosPaulHappy" layoutX="374.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnProductosPaulHappy" text="Productos" />
+                        <Button fx:id="btnProductosYandereSim" layoutX="374.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnProductosYandereSim" text="Productos" />
+                        <Button fx:id="btnChatPaulHappy" layoutX="478.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnChatPaulHappy" text="Chat" />
+                        <Button fx:id="btnChatYandereSim" layoutX="477.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnChatYandereSim" text="Chat" />
                         <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="213.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/profile-pic.girl-int-sw.jpg" />
@@ -272,7 +207,7 @@
                            </font>
                         </Text>
                         <Text fill="#fffefe" layoutX="55.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:" />
-                        <Button fx:id="btnVer" layoutX="77.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnVer" text="Ver" />
+                        <Button fx:id="btnVerProductosHacMath120" layoutX="77.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnVerProductosHacMath120" text="Ver" />
                      </children></AnchorPane>
               </content>
             </Tab>
