@@ -1,11 +1,17 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class EstadisticasViewController {
 
@@ -40,25 +46,27 @@ public class EstadisticasViewController {
     private TextField txtVendedores;
 
     @FXML
-    void OnExportarEstadisticas(ActionEvent event) {
+    void OnExportarEstadisticas(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("interfazReporte-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+
+    @FXML
+    void OnGenerarVendedores(ActionEvent event) {
 
     }
 
     @FXML
-    void OnGenerar(ActionEvent event) {
+    void OnGenerarProductos(ActionEvent event) {
 
     }
-
-    @FXML
-    void OnGenerar1(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnGenerar2(ActionEvent event) {
-
-    }
-
     @FXML
     void OnNotificaciones(ActionEvent event) {
 
