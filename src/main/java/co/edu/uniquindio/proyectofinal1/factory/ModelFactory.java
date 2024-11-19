@@ -84,7 +84,7 @@ public class ModelFactory implements IModelFactoryServices {
 
         // Crear los vendedores
         Vendedor vendedor1 = Vendedor.builder()
-                .nombre("Andrey")
+                .nombre("Andres")
                 .apellidos("Ochoa")
                 .cedula("418956315")
                 .direccion("Villa nueva")
@@ -132,7 +132,7 @@ public class ModelFactory implements IModelFactoryServices {
                 .build();
 
         Vendedor vendedor7 = Vendedor.builder()
-                .nombre("Isabel")
+                .nombre("IsabellaTH789")
                 .apellidos("Fernández Ruiz")
                 .cedula("674589130")
                 .direccion("Av. 9 de julio")
@@ -140,7 +140,7 @@ public class ModelFactory implements IModelFactoryServices {
                 .build();
 
         Vendedor vendedor8 = Vendedor.builder()
-                .nombre("Javier")
+                .nombre("MarioAndres98")
                 .apellidos("Gómez Martínez")
                 .cedula("852147963")
                 .direccion("Calle Bolívar")
@@ -148,16 +148,16 @@ public class ModelFactory implements IModelFactoryServices {
                 .build();
 
         Vendedor vendedor9 = Vendedor.builder()
-                .nombre("Sofía")
-                .apellidos("López Fernández")
+                .nombre("YandereSim")
+                .apellidos("Sim sim")
                 .cedula("763412980")
                 .direccion("Calle 9 de Octubre")
                 .contraseña("sofi.4567")
                 .build();
 
         Vendedor vendedor10 = Vendedor.builder()
-                .nombre("Felipe")
-                .apellidos("Díaz Pérez")
+                .nombre("KawaiiNy65")
+                .apellidos("Nym")
                 .cedula("347569102")
                 .direccion("Paseo del Parque")
                 .contraseña("felipe.8765")
