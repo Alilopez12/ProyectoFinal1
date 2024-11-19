@@ -14,6 +14,8 @@ public class Vendedor extends Usuario{
     private Muro muroProductos;
     private TableroDeControl tableroDeControl;
     private List<Vendedor> contactos;
+    private List<Comentario> comentarios = new ArrayList<>();
+
 
 
 
@@ -24,6 +26,7 @@ public class Vendedor extends Usuario{
         this.muroProductos = muroProductos;
         this.tableroDeControl = tableroDeControl;
         this.contactos = new ArrayList<>();
+        this.comentarios = new ArrayList<>();
     }
 
     public String agregarContacto(Vendedor contacto) {
@@ -35,6 +38,35 @@ public class Vendedor extends Usuario{
             this.contactos.add(contacto);
             return "Contacto agregado con éxito.";
         }
+    }
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void agregarComentario(Comentario comentario) {
+        if (comentario == null || comentario.getPublicacion() == null) {
+            throw new IllegalArgumentException("El comentario o su publicación no pueden ser nulos.");
+        }
+
+        // valida publicación pertenece al vendedor
+        if (!this.listaProductos.contains(comentario.getPublicacion().getProducto())) {
+            System.out.println("El comentario no está asociado a un producto del vendedor.");
+            return;
+        }
+        this.comentarios.add(comentario);
+        notificarNuevoComentario(comentario);
+    }
+
+    private void notificarNuevoComentario(Comentario comentario) {
+        //información del comentario y la publicación
+        String comentarioTexto = comentario.getComentario();
+        String productoAsociado = comentario.getPublicacion().getProducto().getNombre();
+
+        // Notificación en consola (puedes integrar un sistema de eventos o enviar notificaciones reales)
+        System.out.println("¡Nuevo comentario recibido!");
+        System.out.println("Comentario: " + comentarioTexto);
+        System.out.println("Producto: " + productoAsociado);
+        System.out.println("Publicado en: " + comentario.getPublicacion().toString());
     }
 
     public Collection<Producto> getListaProductos() {

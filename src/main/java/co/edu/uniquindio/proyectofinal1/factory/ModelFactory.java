@@ -1,11 +1,14 @@
 package co.edu.uniquindio.proyectofinal1.factory;
 
+import co.edu.uniquindio.proyectofinal1.controller.MediatorController;
 import co.edu.uniquindio.proyectofinal1.controller.VendedorController;
 import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.proyectofinal1.mapping.mapper.MarketPlaceMappinglmpl;
 import co.edu.uniquindio.proyectofinal1.model.*;
 import co.edu.uniquindio.proyectofinal1.service.IModelFactoryServices;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ModelFactory implements IModelFactoryServices {
@@ -215,13 +218,35 @@ public class ModelFactory implements IModelFactoryServices {
                 .estadoProducto(EstadoProducto.VENDIDO)
                 .build();
 
+        // Crear publicaciones
+        Publicacion publicacion1 = new Publicacion(LocalDateTime.now(), 0, new ArrayList<>());
+        publicacion1.setProducto(producto1); // Asociar el producto a la publicación
+
+        Publicacion publicacion2 = new Publicacion(LocalDateTime.now().minusDays(1), 5, new ArrayList<>());
+        publicacion2.setProducto(producto2); // Asociar el producto a la publicación
+
+        // Crear comentarios
+        Comentario comentario1 = new Comentario("¡Me interesa el producto!", publicacion1, vendedor1);
+        Comentario comentario2 = new Comentario("¿Está disponible aún?", publicacion2, vendedor2);
+
+        // Agregar comentarios a los vendedores
+        vendedor1.agregarComentario(comentario1);
+        vendedor2.agregarComentario(comentario2);
+
         // Agregar los usuarios al marketplace
         marketPlace1.getListUsuarios().add(administrador);
         marketPlace1.getListUsuarios().add(vendedor1);
         marketPlace1.getListUsuarios().add(vendedor2);
 
+
+        // Mostrar datos en consola para validar
+        System.out.println("Comentarios de " + vendedor1.getNombre() + ": " + vendedor1.getComentarios());
+        System.out.println("Comentarios de " + vendedor2.getNombre() + ": " + vendedor2.getComentarios());
+
+
         // Crear el controlador de vendedores
         VendedorController vendedorController = new VendedorController();
+        MediatorController mediatorController = new MediatorController();
 
         // Agregar contacto
         vendedorController.agregarContacto(vendedor1, vendedor2); // Vendedor1 agrega a Vendedor2
@@ -233,4 +258,6 @@ public class ModelFactory implements IModelFactoryServices {
 
         return marketPlace1; // Agregar el return para el objeto marketPlace
     }
+
 }
+
