@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor1ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor1ViewController">
    <children>
       <TabPane layoutY="-3.0" prefHeight="400.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -100,7 +100,7 @@
                               <Font size="10.0" />
                            </font>
                         </Text>
-                        <Button fx:id="btnInfoSmartphone" layoutX="338.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnInfoSmartphone" text="info" />
+                        <Button fx:id="btnInfoAudifonos" layoutX="338.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnInfoAudifonos" text="info" />
                         <Button fx:id="btnInfoSmartphone" layoutX="478.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnInfoSmartphone" text="info" />
                         <Label fx:id="labelNumeroContactosPaulinaRubio777" layoutX="111.0" layoutY="304.0" onDragDetected="#OnLabelContactosPaulinaRubio777" prefHeight="18.0" prefWidth="26.0" />
                      </children>
@@ -187,8 +187,6 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text fill="#fffefe" layoutX="58.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:" />
-                        <Button fx:id="btnVerProductosPaulinaRubio777" layoutX="80.0" layoutY="256.0" mnemonicParsing="false" onAction="#OnVerProductosPaulinaRubio777" text="Ver" />
                         <ImageView fitHeight="58.0" fitWidth="55.0" layoutX="226.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/avatarh.png" />
@@ -209,9 +207,7 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Button fx:id="btnProductosAndreyOchoa132" layoutX="423.0" layoutY="208.0" mnemonicParsing="false" onAction="#OnProductosAndreyOchoa132" text="Productos" />
                         <Button fx:id="btnChatAndreyOchoa132" layoutX="513.0" layoutY="208.0" mnemonicParsing="false" onAction="#OnChatAndreyOchoa132" text="Chat" />
-                        <Button fx:id="OnProductosAlbertoDiazC" layoutX="423.0" layoutY="280.0" mnemonicParsing="false" onAction="#OnProductosAlbertoDiazC" text="Productos" />
                         <Button fx:id="btnChatAlbertoDiazC" layoutX="512.0" layoutY="280.0" mnemonicParsing="false" onAction="#OnChatAlbertoDiazC" text="Chat" />
                      </children>
                   </AnchorPane>

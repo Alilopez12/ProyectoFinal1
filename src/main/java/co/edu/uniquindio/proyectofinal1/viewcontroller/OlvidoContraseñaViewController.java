@@ -1,10 +1,17 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class OlvidoContraseñaViewController {
 
@@ -21,12 +28,24 @@ public class OlvidoContraseñaViewController {
     private Button btnEnviar;
 
     @FXML
-    void OnBack(ActionEvent event) {
+    void OnBack(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("login-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
 
     }
 
     @FXML
     void OnEnviar(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Envío Exitoso");
+        alert.setHeaderText(null);
+        alert.setContentText("El correo se envió con éxito.");
+        alert.showAndWait();
 
     }
 

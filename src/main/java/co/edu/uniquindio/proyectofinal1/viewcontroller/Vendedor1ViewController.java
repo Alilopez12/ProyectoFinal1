@@ -1,14 +1,25 @@
 package co.edu.uniquindio.proyectofinal1.viewcontroller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
+import co.edu.uniquindio.proyectofinal1.model.MeGustaObservable;
+import co.edu.uniquindio.proyectofinal1.service.MeGustaObserver;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
-public class Vendedor1ViewController {
+public class Vendedor1ViewController implements MeGustaObserver {
+
+    private final MeGustaObservable observableAudifonos = new MeGustaObservable(); // Observable para audífonos
+    private final MeGustaObservable observableSmartphone = new MeGustaObservable(); // Observable para smartphones
 
     @FXML
     private ResourceBundle resources;
@@ -41,7 +52,7 @@ public class Vendedor1ViewController {
     private Button btnMeGustaAudifonos;
 
     @FXML
-    private Button btnMeGustaComentariosSmarphone;
+    private Button btnMeGustaSmarphone;
 
     @FXML
     private Button btnProductosAndreyOchoa132;
@@ -65,31 +76,32 @@ public class Vendedor1ViewController {
     private Button btnVerProductosPaulinaRubio777;
 
     @FXML
-    private Label labelMeGusta;
+    private Label labelMeGusta; // Label para audífonos
 
     @FXML
-    private Label labelMeGusta1;
+    private Label labelMeGusta1; // Label para smartphones
 
     @FXML
     private Label labelNumeroContactosPaulinaRubio777;
 
     @FXML
     void OnBuscar(ActionEvent event) {
-
     }
 
     @FXML
     void OnChatAlbertoDiazC(ActionEvent event) {
-
     }
 
     @FXML
     void OnChatAndreyOchoa132(ActionEvent event) {
-
     }
 
     @FXML
     void OnInfoSmartphone(ActionEvent event) {
+    }
+
+    @FXML
+    void OnInfoAudifonos(ActionEvent event) {
 
     }
 
@@ -110,31 +122,26 @@ public class Vendedor1ViewController {
 
     @FXML
     void OnMeGustaAudifonos(ActionEvent event) {
-
+        observableAudifonos.incrementarMeGusta(); // Incrementa los "me gusta" de audífonos
     }
 
     @FXML
     void OnMeGustaSmartphone(ActionEvent event) {
-
+        observableSmartphone.incrementarMeGusta(); // Incrementa los "me gusta" de smartphones
     }
 
     @FXML
-    void OnProductosAlbertoDiazC(ActionEvent event) {
-
+    void OnVerHacMath120(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("vendedor3-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void OnProductosAndreyOchoa132(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnVerHacMath120(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnVerMas(ActionEvent event) {
+    void OnVerMasComentariosAudifonos(ActionEvent event) {
 
     }
 
@@ -144,8 +151,13 @@ public class Vendedor1ViewController {
     }
 
     @FXML
-    void OnVerPaulHappy(ActionEvent event) {
-
+    void OnVerPaulHappy(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("vendedor4-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -154,32 +166,39 @@ public class Vendedor1ViewController {
     }
 
     @FXML
-    void OnVerVendedorAndreyOchoa132(ActionEvent event) {
-
+    void OnVerVendedorAndreyOchoa132(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("vendedor2-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
     void initialize() {
-        assert OnProductosAlbertoDiazC != null : "fx:id=\"OnProductosAlbertoDiazC\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnBuscar != null : "fx:id=\"btnBuscar\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnChatAlbertoDiazC != null : "fx:id=\"btnChatAlbertoDiazC\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnChatAndreyOchoa132 != null : "fx:id=\"btnChatAndreyOchoa132\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnInfoSmartphone != null : "fx:id=\"btnInfoSmartphone\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnIngresarChat != null : "fx:id=\"btnIngresarChat\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnIngresarChat1 != null : "fx:id=\"btnIngresarChat1\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnMeGustaAudifonos != null : "fx:id=\"btnMeGustaAudifonos\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnMeGustaComentariosSmarphone != null : "fx:id=\"btnMeGustaComentariosSmarphone\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnProductosAndreyOchoa132 != null : "fx:id=\"btnProductosAndreyOchoa132\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerAndreyOchoa132 != null : "fx:id=\"btnVerAndreyOchoa132\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerHacMath120 != null : "fx:id=\"btnVerHacMath120\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerMasComentariosAudifonos != null : "fx:id=\"btnVerMasComentariosAudifonos\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerMasComentariosSmarphone != null : "fx:id=\"btnVerMasComentariosSmarphone\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerPaulHappy != null : "fx:id=\"btnVerPaulHappy\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert btnVerProductosPaulinaRubio777 != null : "fx:id=\"btnVerProductosPaulinaRubio777\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert labelMeGusta != null : "fx:id=\"labelMeGusta\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert labelMeGusta1 != null : "fx:id=\"labelMeGusta1\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
-        assert labelNumeroContactosPaulinaRubio777 != null : "fx:id=\"labelNumeroContactosPaulinaRubio777\" was not injected: check your FXML file 'vendedor1-view.fxml'.";
+        // Registra los observables
+        observableAudifonos.agregarObserver(new MeGustaObserver() {
+            @Override
+            public void update(int cantidadMeGusta) {
+                labelMeGusta1.setText(String.valueOf(cantidadMeGusta));
+            }
+        });
 
+        observableSmartphone.agregarObserver(new MeGustaObserver() {
+            @Override
+            public void update(int cantidadMeGusta) {
+                labelMeGusta.setText(String.valueOf(cantidadMeGusta));
+            }
+        });
+
+        // Inicializa los valores de los labels
+        labelMeGusta1.setText("0");
+        labelMeGusta.setText("0");
     }
 
+    @Override
+    public void update(int cantidadMeGusta) {
+
+    }
 }

@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor3ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor3ViewController">
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -74,7 +74,7 @@
                         <Button fx:id="btnVerPaulHappy" layoutX="258.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerPaulHappy" text="Ver" />
                         <Button fx:id="btnVerPaulinaRubio777" layoutX="381.0" layoutY="205.0" mnemonicParsing="false" onAction="#OnVerPaulinaRubio777" text="Ver" />
                         <Button fx:id="btnVerAndreyOchoa132" layoutX="504.0" layoutY="204.0" mnemonicParsing="false" onAction="#OnVerAndreyOchoa132" text="Ver" />
-                        <Text layoutX="211.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:">
+                        <Text layoutX="211.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Productos:">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -180,8 +180,6 @@
                         <Circle fill="#173e63" layoutX="241.0" layoutY="133.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
                         <Line endX="241.0" layoutX="302.0" layoutY="156.0" startX="-100.0" />
                         <Line endX="247.0" endY="1.52587890625E-5" layoutX="296.0" layoutY="238.0" startX="-96.0" startY="1.52587890625E-5" />
-                        <Button fx:id="btnProductosPaulHappy" layoutX="374.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnProductosPaulHappy" text="Productos" />
-                        <Button fx:id="btnProductosYandereSim" layoutX="374.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnProductosYandereSim" text="Productos" />
                         <Button fx:id="btnChatPaulHappy" layoutX="478.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnChatPaulHappy" text="Chat" />
                         <Button fx:id="btnChatYandereSim" layoutX="477.0" layoutY="186.0" mnemonicParsing="false" onAction="#OnChatYandereSim" text="Chat" />
                         <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="213.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
@@ -206,8 +204,6 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text fill="#fffefe" layoutX="55.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis productos:" />
-                        <Button fx:id="btnVerProductosHacMath120" layoutX="77.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnVerProductosHacMath120" text="Ver" />
                      </children></AnchorPane>
               </content>
             </Tab>

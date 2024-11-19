@@ -67,8 +67,15 @@ public class LoginViewController {
     }
 
     @FXML
-    void onForgotPassword(ActionEvent event) {
-        System.out.println("Olvido su contraseña");
+    void onForgotPassword(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("olvidoContraseña-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
+
     }
 
 
@@ -92,7 +99,7 @@ public class LoginViewController {
                 break;
 
             case "VENDEDOR":
-                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("perfilusuario-view.fxml"));
+                fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("vendedor1-view.fxml"));
                 break;
 
             default:
