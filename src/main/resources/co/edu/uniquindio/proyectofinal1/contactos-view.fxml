@@ -73,9 +73,6 @@
          </image>
       </ImageView>
       <Label layoutX="260.0" layoutY="171.0" prefHeight="23.0" prefWidth="80.0" text="HacMath120">
-         <font>
-            <Font name="Tw Cen MT Condensed" size="22.0" />
-         </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -95,7 +92,7 @@
       </Label>
       <Label layoutX="261.0" layoutY="230.0" text="YandereSim">
          <font>
-            <Font name="Tw Cen MT Condensed" size="22.0" />
+            <Font size="16.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
@@ -142,7 +139,7 @@
             </LinearGradient>
          </textFill>
          <font>
-            <Font name="Tw Cen MT Condensed" size="22.0" />
+            <Font size="18.0" />
          </font>
       </Label>
       <Button fx:id="btnProductos1" layoutX="350.0" layoutY="169.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Productos">
