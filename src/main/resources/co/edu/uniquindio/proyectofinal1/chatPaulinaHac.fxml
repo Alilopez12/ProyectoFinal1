@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="278.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.chatPaulinaHacViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00182f" height="28.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9597a8" height="213.0" layoutY="188.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <VBox prefHeight="188.0" prefWidth="600.0">
+         <children>
+            <Label text="HacMath120 (CHAT)" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="22.0" />
+               </font>
+            </Label>
+            <ListView fx:id="chatView" prefHeight="179.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+      <TextField fx:id="txtCampoMensaje" layoutX="195.0" layoutY="279.0" promptText="Escribe un mensaje" />
+      <Button fx:id="btnEnviar" layoutX="358.0" layoutY="279.0" mnemonicParsing="false" onAction="#onEnviarMensaje" text="Enviar" />
+   </children>
+</AnchorPane>
