@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor3ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor3ViewController">
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -123,12 +123,9 @@
                               <Image url="@Images/ocarina.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="163.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasComentariosOcarina" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onAction="#OnVerMasComentariosOcarina" text="Ver más" />
                         <Button fx:id="btnMeGustaOcarina" layoutX="163.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnMeGustaOcarina" text="Me gusta" />
                         <Label fx:id="labelMeGustaOcarina" layoutX="234.0" layoutY="233.0" onDragDetected="#OnMeGustaOcarina" prefHeight="18.0" prefWidth="26.0" />
                         <Text layoutX="43.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
-                        <Button fx:id="btnIngresarAlChat" layoutX="93.0" layoutY="312.0" mnemonicParsing="false" onAction="#OnIngresarChat" text="Ingresar al chat" />
                         <ImageView fitHeight="31.0" fitWidth="47.0" layoutX="201.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/neon-glowing-profile-icon-3d-illustration-vector.jpg" />
@@ -147,8 +144,6 @@
                         </Text>
                         <Text layoutX="381.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #2" />
                         <Text layoutX="326.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Amiibo" />
-                        <Text layoutX="448.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasComentariosAmiibo" layoutX="446.0" layoutY="178.0" mnemonicParsing="false" onAction="#OnVerMasComentariosAmiibo" text="Ver más" />
                         <Button fx:id="btnMeGustaAmiibo" layoutX="444.0" layoutY="227.0" mnemonicParsing="false" onAction="#OnMeGustaAmiibo" text="Me gusta" />
                         <Label fx:id="labelMeGustaAmiibo" layoutX="514.0" layoutY="230.0" onDragDetected="#OnMeGustaAmiibo" prefHeight="18.0" prefWidth="26.0" />
                         <Text layoutX="327.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
@@ -158,6 +153,8 @@
                            </image>
                         </ImageView>
                         <Button fx:id="btnIngresarAlChat" layoutX="380.0" layoutY="314.0" mnemonicParsing="false" onAction="#OnIngresarChat" text="Ingresar al chat" />
+                        <Button fx:id="btnComentariosAmiibo" layoutX="444.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnComentariosAmiibo" text="Comentarios" />
+                        <Button fx:id="btnComentariosOcarina" layoutX="165.0" layoutY="168.0" mnemonicParsing="false" onAction="#OnComentariosOcarina" text="Comentarios" />
                      </children></AnchorPane>
             </content>
           </Tab>

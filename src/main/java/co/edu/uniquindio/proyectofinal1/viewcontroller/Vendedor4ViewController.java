@@ -198,4 +198,9 @@ public class Vendedor4ViewController {
 
     }
 
+    public void OnComentariosTutu(ActionEvent actionEvent) {
+    }
+
+    public void OnComentariosJeans(ActionEvent actionEvent) {
+    }
 }

@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor4ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor4ViewController">
    <children>
       <AnchorPane layoutY="-4.0" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -101,7 +101,6 @@
                                     <Font size="10.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="btnInfo" layoutX="423.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
                               <Button fx:id="btnInfo" layoutX="327.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnInfo" text="info" />
                               <Label fx:id="labelNumeroContactosPaulHappy" layoutX="125.0" layoutY="299.0" onDragDetected="#OnLabelNumeroContactosPaulHappy" prefHeight="18.0" prefWidth="30.0" />
                            </children>
@@ -125,8 +124,6 @@
                                     <Image url="@Images/falda.png" />
                                  </image>
                               </ImageView>
-                              <Text layoutX="163.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                              <Button fx:id="btnVerMasComentariosTutu" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onAction="#OnVerMasComentariosTutu" text="Ver más" />
                               <Button fx:id="btnMeGustaTutu" layoutX="163.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnMeGustaTutu" text="Me gusta" />
                               <Label fx:id="labelMeGustaTutu" layoutX="234.0" layoutY="233.0" onDragDetected="#OnLabelMeGustaTutu" prefHeight="18.0" prefWidth="26.0" />
                               <Text layoutX="43.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
@@ -144,8 +141,6 @@
                               </ImageView>
                               <Text layoutX="359.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #2" />
                               <Text layoutX="307.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Jeans mujer" />
-                              <Text layoutX="427.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                              <Button fx:id="btnVerMas1" layoutX="428.0" layoutY="179.0" mnemonicParsing="false" onAction="#OnVerMas" text="Ver más" />
                               <Button fx:id="btnMeGustaJeansMujer" layoutX="427.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnMeGustaJeansMujer" text="Me gusta" />
                               <Label fx:id="labelMeGustaJeansMujer" layoutX="497.0" layoutY="229.0" onDragDetected="#OnLabelMeGustaJeansMujer" prefHeight="18.0" prefWidth="26.0" />
                               <Text layoutX="299.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: HacMath120" />
@@ -155,6 +150,8 @@
                                  </image>
                               </ImageView>
                               <Button fx:id="btnIngresarAlChat1" layoutX="356.0" layoutY="316.0" mnemonicParsing="false" onAction="#OnIngresarAlChat" text="Ingresar al chat" />
+                              <Button fx:id="btnComentariosTutu" layoutX="161.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnComentariosTutu" text="Comentarios" />
+                              <Button fx:id="btnComentariosJeans" layoutX="427.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnComentariosJeans" text="Comentarios" />
                            </children>
                         </AnchorPane>
                      </content>

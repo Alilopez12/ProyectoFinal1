@@ -192,4 +192,9 @@ public class Vendedor2ViewController {
 
     }
 
+    public void OnComentariosCamisaNegra(ActionEvent actionEvent) {
+    }
+
+    public void OnComentariosZapatos(ActionEvent actionEvent) {
+    }
 }

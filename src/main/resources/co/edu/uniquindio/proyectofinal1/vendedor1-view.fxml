@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollBar?>
@@ -15,14 +9,13 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor1ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor1ViewController">
    <children>
       <TabPane layoutY="-3.0" prefHeight="400.0" prefWidth="638.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -130,8 +123,6 @@
                         </ImageView>
                         <Text layoutX="89.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
                         <Text layoutX="49.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Celular smartphone" />
-                        <Text layoutX="151.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasComentariosSmarphone" layoutX="158.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnVerMasComentariosSmartphone" text="Ver más" />
                         <Button fx:id="btnMeGustaSmarphone" layoutX="155.0" layoutY="224.0" mnemonicParsing="false" onAction="#OnMeGustaSmartphone" text="Me gusta" />
                         <Label fx:id="labelMeGusta" layoutX="227.0" layoutY="228.0" onDragDetected="#OnLabelMeGusta" prefHeight="18.0" prefWidth="29.0" />
                         <Text layoutX="32.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: PulinaRubio777" />
@@ -149,8 +140,6 @@
                         </ImageView>
                         <Text layoutX="384.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #2" />
                         <Text layoutX="319.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Audifonos" />
-                        <Text layoutX="443.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasComentariosAudifonos" layoutX="444.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnVerMasComentariosAudifonos" text="Ver más" />
                         <Button fx:id="btnMeGustaAudifonos" layoutX="442.0" layoutY="224.0" mnemonicParsing="false" onAction="#OnMeGustaAudifonos" text="Me gusta" />
                         <Label fx:id="labelMeGusta1" layoutX="513.0" layoutY="227.0" onDragDetected="#OnLabelMeGusta" prefHeight="18.0" prefWidth="29.0" />
                         <Text layoutX="319.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: PulinaRubio777" />
@@ -160,6 +149,8 @@
                            </image>
                         </ImageView>
                         <Button fx:id="btnIngresarChat1" layoutX="370.0" layoutY="319.0" mnemonicParsing="false" onAction="#OnIngresarChat" text="Ingresar al chat" />
+                        <Button fx:id="btnComentariosSmartphone" layoutX="154.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnComentariosSmartphone" text="Comentarios" />
+                        <Button fx:id="btnComentariosAudifonos" layoutX="443.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnComentariosAudifonos" text="Comentarios" />
                      </children>
                   </AnchorPane>
             </content>

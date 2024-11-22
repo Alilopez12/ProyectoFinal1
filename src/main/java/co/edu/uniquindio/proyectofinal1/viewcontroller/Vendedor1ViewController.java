@@ -216,4 +216,10 @@ public class Vendedor1ViewController implements MeGustaObserver {
     public void update(int cantidadMeGusta) {
 
     }
+
+    public void OnComentariosSmartphone(ActionEvent actionEvent) {
+    }
+
+    public void OnComentariosAudifonos(ActionEvent actionEvent) {
+    }
 }

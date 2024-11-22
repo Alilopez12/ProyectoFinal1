@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor2ViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.proyectofinal1.viewcontroller.Vendedor2ViewController">
    <children>
       <TabPane layoutY="-4.0" prefHeight="408.0" prefWidth="614.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -123,8 +123,6 @@
                         </ImageView>
                         <Text layoutX="91.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #1" />
                         <Text layoutX="31.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Camisa negra" />
-                        <Text layoutX="147.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasComentariosCamisaNegra" layoutX="148.0" layoutY="192.0" mnemonicParsing="false" onAction="#OnVerMasComentariosCamisaNegra" text="Ver más" />
                         <Button fx:id="btnMeGustaCamisaNegra" layoutX="146.0" layoutY="236.0" mnemonicParsing="false" onAction="#OnMeGustaCamisaNegra" text="Me gusta" />
                         <Label fx:id="labelMeGusta" layoutX="217.0" layoutY="240.0" onDragDetected="#OnLabelMeGusta" prefHeight="18.0" prefWidth="26.0" />
                         <Text layoutX="31.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: AndreyOchoa132" />
@@ -142,8 +140,6 @@
                         </ImageView>
                         <Text layoutX="359.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUBLICACIÓN #2" />
                         <Text layoutX="302.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTO: Zapatos elegantes negros" />
-                        <Text layoutX="418.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentarios:" />
-                        <Button fx:id="btnVerMasZapatosNegros" layoutX="419.0" layoutY="192.0" mnemonicParsing="false" onAction="#OnVerMasZapatosNegros" text="Ver más" />
                         <Button fx:id="btnMeGustaZapatosNegros" layoutX="417.0" layoutY="236.0" mnemonicParsing="false" onAction="#OnMeGustaZapatosNegros" text="Me gusta" />
                         <Label fx:id="labelMeGusta1" layoutX="493.0" layoutY="239.0" onDragDetected="#OnLabelMeGusta1" prefHeight="18.0" prefWidth="26.0" />
                         <Text layoutX="296.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publicado por: AndreyOchoa132" />
@@ -153,6 +149,8 @@
                            </image>
                         </ImageView>
                         <Button fx:id="btnIngresarAlChat1" layoutX="354.0" layoutY="319.0" mnemonicParsing="false" onAction="#OnIngresarAlChat1" text="Ingresar al chat" />
+                        <Button fx:id="btnComentariosCamisaNegra" layoutX="146.0" layoutY="181.0" mnemonicParsing="false" onAction="#OnComentariosCamisaNegra" text="Comentarios" />
+                        <Button fx:id="btnComentariosZapatos" layoutX="415.0" layoutY="181.0" mnemonicParsing="false" onAction="#OnComentariosZapatos" text="Comentarios" />
                      </children>
                   </AnchorPane>
             </content>
@@ -201,7 +199,6 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Button fx:id="btnChat" layoutX="507.0" layoutY="219.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
                         <Button fx:id="btnChat" layoutX="507.0" layoutY="282.0" mnemonicParsing="false" onAction="#OnChat" text="Chat" />
                         <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="236.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
                            <image>

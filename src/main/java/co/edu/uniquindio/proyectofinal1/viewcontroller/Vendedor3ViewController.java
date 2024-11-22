@@ -5,6 +5,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import co.edu.uniquindio.proyectofinal1.MarketPlaceApplication;
+import co.edu.uniquindio.proyectofinal1.model.MeGustaObservable;
+import co.edu.uniquindio.proyectofinal1.service.MeGustaObserver;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +16,12 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class Vendedor3ViewController {
+public class Vendedor3ViewController implements MeGustaObserver {
+    private final MeGustaObservable observableOcarina = new MeGustaObservable();
+    private final MeGustaObservable observableAmiibo = new MeGustaObservable();
+
+    private boolean ocarinaLiked = false; // Controla si ya se votó en Ocarina
+    private boolean amiiboLiked = false;  // Controla si ya se votó en Amiibo
 
     @FXML
     private ResourceBundle resources;
@@ -32,6 +39,12 @@ public class Vendedor3ViewController {
     private Button btnChatYandereSim;
 
     @FXML
+    private Button btnComentariosAmiibo;
+
+    @FXML
+    private Button btnComentariosOcarina;
+
+    @FXML
     private Button btnInfoAmiibo;
 
     @FXML
@@ -47,28 +60,13 @@ public class Vendedor3ViewController {
     private Button btnMeGustaOcarina;
 
     @FXML
-    private Button btnProductosPaulHappy;
-
-    @FXML
-    private Button btnProductosYandereSim;
-
-    @FXML
     private Button btnVerAndreyOchoa132;
-
-    @FXML
-    private Button btnVerMasComentariosAmiibo;
-
-    @FXML
-    private Button btnVerMasComentariosOcarina;
 
     @FXML
     private Button btnVerPaulHappy;
 
     @FXML
     private Button btnVerPaulinaRubio777;
-
-    @FXML
-    private Button btnVerProductosHacMath120;
 
     @FXML
     private Label labelMeGustaAmiibo;
@@ -91,6 +89,16 @@ public class Vendedor3ViewController {
 
     @FXML
     void OnChatYandereSim(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnComentariosAmiibo(ActionEvent event) {
+
+    }
+
+    @FXML
+    void OnComentariosOcarina(ActionEvent event) {
 
     }
 
@@ -120,37 +128,27 @@ public class Vendedor3ViewController {
     }
 
     @FXML
-    void OnMeGustaAmiibo(MouseEvent event) {
+    void OnMeGustaAmiibo(ActionEvent event) {
+        if (!amiiboLiked) { // Verifica si ya se votó
+            observableAmiibo.incrementarMeGusta();
+            amiiboLiked = true; // Marca como votado
+            btnMeGustaAmiibo.setDisable(true); // Deshabilita el botón
+        }
 
     }
 
     @FXML
-    void OnMeGustaOcarina(MouseEvent event) {
-
-    }
-
-    @FXML
-    void OnProductosPaulHappy(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnProductosYandereSim(ActionEvent event) {
+    void OnMeGustaOcarina(ActionEvent event) {
+        if (!ocarinaLiked) { // Verifica si ya se votó
+            observableOcarina.incrementarMeGusta();
+            ocarinaLiked = true; // Marca como votado
+            btnMeGustaOcarina.setDisable(true); // Deshabilita el botón
+        }
 
     }
 
     @FXML
     void OnVerAndreyOchoa132(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnVerMasComentariosAmiibo(ActionEvent event) {
-
-    }
-
-    @FXML
-    void OnVerMasComentariosOcarina(ActionEvent event) {
 
     }
 
@@ -165,32 +163,22 @@ public class Vendedor3ViewController {
     }
 
     @FXML
-    void OnVerProductosHacMath120(ActionEvent event) {
-
-    }
-
-    @FXML
     void initialize() {
-        assert btnBuscar != null : "fx:id=\"btnBuscar\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnChatPaulHappy != null : "fx:id=\"btnChatPaulHappy\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnChatYandereSim != null : "fx:id=\"btnChatYandereSim\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnInfoAmiibo != null : "fx:id=\"btnInfoAmiibo\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnInfoOcarina != null : "fx:id=\"btnInfoOcarina\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnIngresarAlChat != null : "fx:id=\"btnIngresarAlChat\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnMeGustaAmiibo != null : "fx:id=\"btnMeGustaAmiibo\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnMeGustaOcarina != null : "fx:id=\"btnMeGustaOcarina\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnProductosPaulHappy != null : "fx:id=\"btnProductosPaulHappy\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnProductosYandereSim != null : "fx:id=\"btnProductosYandereSim\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerAndreyOchoa132 != null : "fx:id=\"btnVerAndreyOchoa132\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerMasComentariosAmiibo != null : "fx:id=\"btnVerMasComentariosAmiibo\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerMasComentariosOcarina != null : "fx:id=\"btnVerMasComentariosOcarina\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerPaulHappy != null : "fx:id=\"btnVerPaulHappy\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerPaulinaRubio777 != null : "fx:id=\"btnVerPaulinaRubio777\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert btnVerProductosHacMath120 != null : "fx:id=\"btnVerProductosHacMath120\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert labelMeGustaAmiibo != null : "fx:id=\"labelMeGustaAmiibo\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert labelMeGustaOcarina != null : "fx:id=\"labelMeGustaOcarina\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
-        assert labelNumeroContactosHacMath120 != null : "fx:id=\"labelNumeroContactosHacMath120\" was not injected: check your FXML file 'vendedor3-view.fxml'.";
+        observableOcarina.agregarObserver(cantidadMeGusta ->
+                labelMeGustaOcarina.setText(String.valueOf(cantidadMeGusta))
+        );
 
+        observableAmiibo.agregarObserver(cantidadMeGusta ->
+                labelMeGustaAmiibo.setText(String.valueOf(cantidadMeGusta))
+        );
+
+        // Inicializa los valores de los labels
+        labelMeGustaOcarina.setText("0");
+        labelMeGustaAmiibo.setText("0");
     }
 
+    @Override
+    public void update(int cantidadMeGusta) {
+        // Actualización adicional si se necesita
+    }
 }
