@@ -50,9 +50,9 @@ public class IngresarViewController {
     @FXML
     void OnRegistrarse(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Registro exitoso");
+        alert.setTitle("Creado con éxito");
         alert.setHeaderText(null);
-        alert.setContentText("Usuario registrado con exito.");
+        alert.setContentText("Usuario creado con exito.");
         alert.showAndWait();
 
     }

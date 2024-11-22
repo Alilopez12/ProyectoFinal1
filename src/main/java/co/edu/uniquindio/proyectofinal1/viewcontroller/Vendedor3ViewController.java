@@ -93,13 +93,23 @@ public class Vendedor3ViewController implements MeGustaObserver {
     }
 
     @FXML
-    void OnComentariosAmiibo(ActionEvent event) {
-
+    void OnComentariosAmiibo(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("comentario-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void OnComentariosOcarina(ActionEvent event) {
-
+    void OnComentariosOcarina(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("comentario-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
