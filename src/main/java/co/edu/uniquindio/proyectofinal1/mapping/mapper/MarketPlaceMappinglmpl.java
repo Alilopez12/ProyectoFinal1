@@ -1,6 +1,8 @@
 package co.edu.uniquindio.proyectofinal1.mapping.mapper;
 
+import co.edu.uniquindio.proyectofinal1.mapping.dto.ProductoDto;
 import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
+import co.edu.uniquindio.proyectofinal1.model.Producto;
 import co.edu.uniquindio.proyectofinal1.model.Usuario;
 import co.edu.uniquindio.proyectofinal1.model.Vendedor;
 import co.edu.uniquindio.proyectofinal1.service.IMarketPlaceMapping;
@@ -42,5 +44,8 @@ public class MarketPlaceMappinglmpl implements IMarketPlaceMapping {
                 .cedula(usuarioDto.cedula())
                 .build();
     }
+
+
+
 
 }

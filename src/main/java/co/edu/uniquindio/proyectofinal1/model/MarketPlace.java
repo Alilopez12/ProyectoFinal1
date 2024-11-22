@@ -1,18 +1,22 @@
 package co.edu.uniquindio.proyectofinal1.model;
 
+import co.edu.uniquindio.proyectofinal1.service.ICrudProducto;
 import co.edu.uniquindio.proyectofinal1.service.ICrudUsuario;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MarketPlace implements ICrudUsuario {
+public class MarketPlace implements ICrudUsuario{
     List<Usuario> listUsuarios = new ArrayList<>();
     List<Vendedor> listVendedores = new ArrayList<>();
     List<Administrador> ListAdministradores = new ArrayList<>();
+    List<Producto> listProductos = new ArrayList<>();
+
     private String nombre;
 
     public MarketPlace() {
     }
+
 
     @Override
     public boolean crearUsuario(String nombre, String apellidos, String cedula, String direccion, String contraseña) {
@@ -91,6 +95,10 @@ public class MarketPlace implements ICrudUsuario {
         return usuarioExistente;
     }
 
+
+    public List<Producto> getListProductos() {
+        return listProductos;
+    }
     public List<Usuario> getListUsuarios() {
         return listUsuarios;
     }

@@ -223,4 +223,8 @@ public class Vendedor1ViewController implements MeGustaObserver {
     public void OnComentariosAudifonos(ActionEvent actionEvent) {
 
     }
+
+    public void OnCrearPeroducto(ActionEvent actionEvent) {
+
+    }
 }

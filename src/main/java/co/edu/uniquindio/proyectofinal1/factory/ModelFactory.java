@@ -2,6 +2,7 @@ package co.edu.uniquindio.proyectofinal1.factory;
 
 import co.edu.uniquindio.proyectofinal1.controller.MediatorController;
 import co.edu.uniquindio.proyectofinal1.controller.VendedorController;
+import co.edu.uniquindio.proyectofinal1.mapping.dto.ProductoDto;
 import co.edu.uniquindio.proyectofinal1.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.proyectofinal1.mapping.mapper.MarketPlaceMappinglmpl;
 import co.edu.uniquindio.proyectofinal1.model.*;
@@ -208,8 +209,8 @@ public class ModelFactory implements IModelFactoryServices {
         System.out.println("Contactos de " + vendedor1.getNombre() + ": " + vendedor1.getContactos().size());
         System.out.println("Contactos de " + vendedor2.getNombre() + ": " + vendedor2.getContactos().size());
 
+
+
         return marketPlace1; // Agregar el return para el objeto marketPlace
     }
-
 }
-

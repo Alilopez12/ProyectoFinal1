@@ -191,4 +191,7 @@ public class Vendedor3ViewController implements MeGustaObserver {
     public void update(int cantidadMeGusta) {
         // Actualización adicional si se necesita
     }
+
+    public void OnCrearProducto(ActionEvent actionEvent) {
+    }
 }

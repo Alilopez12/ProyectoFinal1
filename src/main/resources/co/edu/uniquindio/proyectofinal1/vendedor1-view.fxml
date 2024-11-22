@@ -33,7 +33,6 @@
                         </ImageView>
                         <Text layoutX="56.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDORA" />
                         <Text layoutX="46.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaulinaRubio777" />
-                        <Text layoutX="46.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contactos:" />
                         <Text layoutX="217.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias: ">
                            <font>
                               <Font size="16.0" />
@@ -101,7 +100,7 @@
                         </Text>
                         <Button fx:id="btnInfoAudifonos" layoutX="338.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnInfoAudifonos" text="info" />
                         <Button fx:id="btnInfoSmartphone" layoutX="478.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnInfoSmartphone" text="info" />
-                        <Label fx:id="labelNumeroContactosPaulinaRubio777" layoutX="111.0" layoutY="304.0" onDragDetected="#OnLabelContactosPaulinaRubio777" prefHeight="18.0" prefWidth="26.0" />
+                        <Button fx:id="btnCreaeProducto" layoutX="40.0" layoutY="308.0" mnemonicParsing="false" onAction="#OnCrearPeroducto" text="Crear Producto" />
                      </children>
                   </AnchorPane>
             </content>

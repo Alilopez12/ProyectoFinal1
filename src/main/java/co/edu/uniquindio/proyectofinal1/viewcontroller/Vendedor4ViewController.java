@@ -202,5 +202,6 @@ public class Vendedor4ViewController {
     }
 
     public void OnComentariosJeans(ActionEvent actionEvent) {
+
     }
 }

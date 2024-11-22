@@ -32,7 +32,6 @@
                            </image>
                         </ImageView>
                         <Text layoutX="67.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENDEDOR" />
-                        <Text layoutX="20.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número contactos:" />
                         <Text layoutX="20.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HacMath120" />
                         <Text layoutX="212.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sugerencias:">
                            <font>
@@ -101,7 +100,6 @@
                         </Text>
                         <Button fx:id="btnInfoAmiibo" layoutX="327.0" layoutY="327.0" mnemonicParsing="false" onAction="#OnInfoAmiibo" text="info" />
                         <Button fx:id="btnInfoOcarina" layoutX="447.0" layoutY="327.0" mnemonicParsing="false" onAction="#OnInfoOcarina" text="info" />
-                        <Label fx:id="labelNumeroContactosHacMath120" layoutX="129.0" layoutY="304.0" onDragDetected="#OnLabelNumeroContactosHacMath120" prefHeight="18.0" prefWidth="26.0" />
                      </children>
                   </AnchorPane>
             </content>
@@ -206,5 +204,6 @@
             </Tab>
         </tabs>
       </TabPane>
+      <Button fx:id="bntCrearProducto" layoutX="49.0" layoutY="343.0" mnemonicParsing="false" onAction="#OnCrearProducto" text="Crear Producto" />
    </children>
 </AnchorPane>
