@@ -224,7 +224,12 @@ public class Vendedor1ViewController implements MeGustaObserver {
 
     }
 
-    public void OnCrearPeroducto(ActionEvent actionEvent) {
-
+    public void OnCrearPeroducto(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MarketPlaceApplication.class.getResource("producto-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Stage stage = new Stage();
+        stage.setTitle("Registro");
+        stage.setScene(scene);
+        stage.show();
     }
 }
